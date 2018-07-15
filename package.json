@@ -26,9 +26,12 @@
   "homepage": "https://github.com/dayshmookh/website-klathrate#readme",
   "dependencies": {
     "cors": "^2.8.4",
-    "eslint": "^5.1.0",
     "express": "^4.16.3",
     "pug": "^2.0.3",
     "serve-favicon": "^2.5.0"
+  },
+  "devDependencies": {
+    "eslint": "^5.1.0",
+    "nodemon": "^1.18.2"
   }
 }
