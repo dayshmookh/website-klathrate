@@ -36,7 +36,7 @@ router.get('/businesses', function (req, res) {
 
 router.get('/guarantee', function (req, res) {
     res.render('guarantee', {
-        title: 
+        title: "Trade Guarantee"
     });
 });
 
