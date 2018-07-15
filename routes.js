@@ -5,27 +5,39 @@ var router = express.Router();
 // Client pages -----
 
 router.get('/', function (req, res) {
-    res.render('homepage');
+    res.render('homepage', {
+        title: "Home"
+    });
 });
 
 router.get('/about', function (req, res) {
-    res.render('about');
+    res.render('about', {
+        title: "About"
+    });
 });
 
 router.get('/financers', function (req, res) {
-    res.render('financers');
+    res.render('financers', {
+        title: "Financers"
+    });
 });
 
 router.get('/privacypolicy', function (req, res) {
-    res.render('privacypolicy');
+    res.render('privacypolicy', {
+        title: "Privacy Policy"
+    });
 });
 
 router.get('/businesses', function (req, res) {
-    res.render('businesses');
+    res.render('businesses', {
+        title: "Businesses"
+    });
 });
 
 router.get('/guarantee', function (req, res) {
-    res.render('guarantee');
+    res.render('guarantee', {
+        title: 
+    });
 });
 
 
