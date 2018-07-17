@@ -23,13 +23,32 @@ block content
                                     | adghjasgdh
                                     br
                                     span.txt-rotate(data-period="20" data-rotate='[ "nerdy.", "simple.", "pure JS.", "pretty.", "fun!" ]')
-
-
-                            .col.s12.m6.l6.center(data-tilt="")(style='overflow:hidden;')
+                            .col.s12.m6.l6.center(data-tilt="")
                                img(src='/images/logo.png')(style='border: 2px solid lightgreen;')
             .parallax
                 img(src='/images/image.jpg', alt='Unsplashed background img 1')
 
+
+
+    .section.yellow.darken-2
+        // Icon Section
+        .row
+            h2(style='text-align:center;') How it Works!
+            .col.s12.m6.l6
+                .icon-block
+                    h2.center
+                        img(src='https://png.icons8.com/ios/50/000000/home.png')
+                    h5.center Architecture
+                    p.light.center Architecture starts when you carefully put two bricks together. There is begins.
+            .col.s12.m6.l6
+                .icon-block
+                    h2.center.brown-text
+                        img(src='https://png.icons8.com/ios/50/000000/menu.png')
+                    h5.center Interior
+                    p.light.center Interior is the natural projection of the soul
+        .row
+            .col.s12.center
+                a.green.lighten-1.waves-effect.waves-light.btn-large(style='font-size:20px')(href='/') Demo wali Link
+
 block scripts
-    script(src="/js/typeit.js")
     script(src="/js/index.js")
