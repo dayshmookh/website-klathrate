@@ -1,12 +1,22 @@
-extends layout.pug
+html
+    head
+        title Klathrate - #{title}
+        include styles.pug
+        
+        block styles
+        
+    body.index.is-preload
+        #page-wrapper
+            header#header.alt
+                h1#logo
+                    a(href="/") Klathrate
+                    
+                include navbar.pug
 
-block styles
-    //- Page stylesheets goes here
-
-block content
-    //- Page content goes here
-    h1.header.center Hello!
-
-
-block scripts
-    //- Page scripts goes here
+        main    
+            block content
+        
+        include footer.pug
+        include scripts.pug
+        
+        block scripts

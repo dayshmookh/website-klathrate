@@ -5,9 +5,13 @@ html
         
         block styles
         
-    body(onload="typeWriter()")
-        header
-            include navbar.pug
+    body.index.is-preload
+        #page-wrapper
+            header#header.alt
+                h1#logo
+                    a(href="/") Klathrate
+                    
+                include navbar.pug
 
         main    
             block content

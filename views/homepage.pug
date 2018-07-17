@@ -1,57 +1,153 @@
 extends layout.pug
-   
+
 block styles
-    //- Page stylesheets goes here
+    //- Custom styles
 
 block content
-    //- Page content goes here
+    //- Page content
+    //- Banner
+    section#banner
+        //-
+            ".inner" is set up as an inline-block so it automatically expands
+            in both directions to fit whatever's inside it. This means it won't
+            automatically wrap lines, so be sure to use line breaks where
+            appropriate (<br />).
+        .inner
+            header
+                h2 TWENTY
+            p
+                | This is 
+                strong Twenty
+                | , a free
+                br
+                | 						responsive template
+                br
+                | 						by 
+                a(href="http://html5up.net") HTML5 UP
+                | .
+            footer
+                ul.buttons.stacked
+                    li
+                        a.button.fit.scrolly(href="#main") Tell Me More
+    //- Main
+    article#main
+        header.special.container
+            span.icon.fa-bar-chart-o
+            h2
+                | As this is my 
+                strong twentieth
+                |  freebie for HTML5 UP
+                br
+                | 						I decided to give it a really creative name.
+            p
+                | Turns out 
+                strong Twenty
+                |  was the best I could come up with. Anyway, lame name aside,
+                br
+                | 						it's minimally designed, fully responsive, built on HTML5/CSS3,
+                | 						and, like all my stuff,
+                br
+                | 						released for free under the 
+                a(href="http://html5up.net/license") Creative Commons Attribution 3.0
+                |  license. Have fun!
+        //- One
+        section.wrapper.style2.container.special-alt
+            .row.gtr-50
+                .col-8.col-12-narrower
+                    header
+                        h2
+                            | Behold the 
+                            strong icons
+                            |  that visualize what you’re all about. or just take up space. your call bro.
+                    p
+                        | Sed tristique purus vitae volutpat ultrices. Aliquam eu elit eget arcu comteger ut fermentum lorem. Lorem ipsum dolor sit amet. Sed tristique purus vitae volutpat ultrices. eu elit eget commodo. Sed tristique purus vitae volutpat ultrices. Aliquam eu elit eget arcu commodo.
+                    footer
+                        ul.buttons
+                            li
+                                a.button(href="#") Find Out More
+                .col-4.col-12-narrower.imp-narrower
+                    ul.featured-icons
+                        li
+                            span.icon.fa-clock-o
+                                span.label Feature 1
+                        li
+                            span.icon.fa-volume-up
+                                span.label Feature 2
+                        li
+                            span.icon.fa-laptop
+                                span.label Feature 3
+                        li
+                            span.icon.fa-inbox
+                                span.label Feature 4
+                        li
+                            span.icon.fa-lock
+                                span.label Feature 5
+                        li
+                            span.icon.fa-cog
+                                span.label Feature 6
+        //- Two
+        section.wrapper.style1.container.special
+            .row
+                .col-4.col-12-narrower
+                    section
+                        span.icon.featured.fa-check
+                        header
+                            h3 This is Something
+                        p
+                            | Sed tristique purus vitae volutpat ultrices. Aliquam eu elit eget arcu commodo suscipit dolor nec nibh. Proin a ullamcorper elit, et sagittis turpis. Integer ut fermentum.
+                .col-4.col-12-narrower
+                    section
+                        span.icon.featured.fa-check
+                        header
+                            h3 Also Something
+                        p
+                            | Sed tristique purus vitae volutpat ultrices. Aliquam eu elit eget arcu commodo suscipit dolor nec nibh. Proin a ullamcorper elit, et sagittis turpis. Integer ut fermentum.
+                .col-4.col-12-narrower
+                    section
+                        span.icon.featured.fa-check
+                        header
+                            h3 Probably Something
+                        p
+                            | Sed tristique purus vitae volutpat ultrices. Aliquam eu elit eget arcu commodo suscipit dolor nec nibh. Proin a ullamcorper elit, et sagittis turpis. Integer ut fermentum.
+        //- Three
+        section.wrapper.style3.container.special
+            header.major
+                h2
+                    | Next look at this 
+                    strong cool stuff
 
-    .parallax-container.screen-height.valign-wrapper
-            .container
-                .row
-                    div.padded-top-comfortable.screen-height
-                        .row
-                            .col.s12.m6.l6
-                                div
-                                    h1#demo
-                                //-h1
-                                    //| This pen is
-                                  //  br
-                                    span.txt-rotate(data-period="20" data-rotate='[ "nerdy.", "simple.", "pure JS.", "pretty.", "fun!" ]')
-                                //-p
-                                    | adghjasgdh
-                                    br
-                                    span.txt-rotate(data-period="20" data-rotate='[ "nerdy.", "simple.", "pure JS.", "pretty.", "fun!" ]')
+            include mixins/featured-img.pug
+            .row
+                +featuredimg("#", "/images/pic01.jpg", "A Really Fast Train", "Sed tristique purus vitae volutpat commodo suscipit amet sed nibh. Proin a ullamcorper sed blandit. Sed tristique purus vitae volutpat commodo suscipit ullamcorper sed blandit lorem ipsum dolore.")
 
+                +featuredimg("#", "/images/pic01.jpg", "A Really Fast Train", "Sed tristique purus vitae volutpat commodo suscipit amet sed nibh. Proin a ullamcorper sed blandit. Sed tristique purus vitae volutpat commodo suscipit ullamcorper sed blandit lorem ipsum dolore.")
 
-                            .col.s12.m6.l6.center.no-overflow(data-tilt)
-                               img(src='/images/logo.png', style='border: 2px solid lightgreen;')
-            .parallax
-                img(src='/images/conference.jpg', alt='Unsplashed background img 1')
+            .row
+                +featuredimg("#", "/images/pic01.jpg", "A Really Fast Train", "Sed tristique purus vitae volutpat commodo suscipit amet sed nibh. Proin a ullamcorper sed blandit. Sed tristique purus vitae volutpat commodo suscipit ullamcorper sed blandit lorem ipsum dolore.")
 
-
-    .section.yellow.darken-2
-        // Icon Section
-        .row
-            .col.s12.m6.l6
-                .icon-block
-                    h2.center
-                        img(src='/images/logo.png')
-                        | How it Works!
-
-                    h5.center Architecture
-                    p.light.center Architecture starts when you carefully put two bricks together. There is begins.
-            .col.s12.m6.l6
-                .icon-block
-                    h2.center.brown-text
-                        img(src='https://png.icons8.com/ios/50/000000/menu.png')
-                    h5.center Interior
-                    p.light.center Interior is the natural projection of the soul
-        .row
-            .col.s12.center
-                a.green.lighten-1.waves-effect.waves-light.btn-large(style='font-size:20px')(href='/') Demo wali Link
-
-    script(src="/js/typewriter.js")
-    script(src="/js/index.js")
-
-
+                +featuredimg("#", "/images/pic01.jpg", "A Really Fast Train", "Sed tristique purus vitae volutpat commodo suscipit amet sed nibh. Proin a ullamcorper sed blandit. Sed tristique purus vitae volutpat commodo suscipit ullamcorper sed blandit lorem ipsum dolore.")
+                
+                
+            
+            footer.major
+                ul.buttons
+                    li
+                        a.button(href="#") See More
+    //- CTA
+    section#cta
+        header
+            h2
+                | Ready to do 
+                strong something
+                | ?
+            p Proin a ullamcorper elit, et sagittis turpis integer ut fermentum.
+        footer
+            ul.buttons
+                li
+                    a.button.primary(href="#") Take My Money
+                li
+                    a.button(href="#") LOL Wut
+            
+            
+block scripts
+    //- custom scripts

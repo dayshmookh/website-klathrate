@@ -1,0 +1,8 @@
+mixin featuredimg(link, image, header, paragraph)
+    .col-6.col-12-narrower
+        section
+            a.image.featured(href=link)
+                img(src=image, alt="")
+            header
+                h3= header
+            p= paragraph
