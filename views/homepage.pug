@@ -29,8 +29,34 @@ block content
             .parallax
                 img(src='/images/image.jpg', alt='Unsplashed background img 1')
 
+    .parallax-container.screen-height.valign-wrapper
+        .container
+            .padded-top-comfortable.screen-height
+                .row
+                    .col.s12.m6
+                        div
+                            h1#demo
+                        //-h1
+                            //| This pen is
+                            //  br
+                            span.txt-rotate(data-period="20" data-rotate='[ "nerdy.", "simple.", "pure JS.", "pretty.", "fun!" ]')
+                        //-p
+                            | adghjasgdh
+                            br
+                            span.txt-rotate(data-period="20" data-rotate='[ "nerdy.", "simple.", "pure JS.", "pretty.", "fun!" ]')
+
+
+                    .col.s12.m6.center.no-overflow(data-tilt)
+                        img(src='/images/logo.png', style='border: 2px solid lightgreen;')
+        .parallax
+            img(src='/images/image.jpg', alt='Unsplashed background img 1')
+
 block scripts
+<<<<<<< HEAD
 
     script(src="/js/typeit.js")
     script(src="/js/index.js")
 
+=======
+    script(src="/js/init/init-typewriter.js")
+>>>>>>> origin/master
