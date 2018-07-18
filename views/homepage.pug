@@ -14,17 +14,8 @@ block content
             appropriate (<br />).
         .inner
             header
-                h2 TWENTY
-            p
-                | This is 
-                strong Twenty
-                | , a free
-                br
-                | 						responsive template
-                br
-                | 						by 
-                a(href="http://html5up.net") HTML5 UP
-                | .
+                h2#banner-header
+                //- p#banner-p
             footer
                 ul.buttons.stacked
                     li
@@ -152,3 +143,5 @@ block content
             
 block scripts
     //- custom scripts
+    script(src="/js/lib/typeit.min.js")
+    script(src="/js/init/typeit.homepage.js")
