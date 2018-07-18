@@ -1,0 +1,9 @@
+#nav-btn {
+    background: rgba(0,0,0,0);
+    border-color: #f57c00;
+}
+
+#nav-btn:hover {
+    background: #f57c00;
+    border-color: #f57c00;
+}
