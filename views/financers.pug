@@ -26,15 +26,31 @@ block content
         header.special.container
             span.icon.fa-bar-chart-o
         //- One
-        section.wrapper.style2.container.special-alt
+        section.wrapper.style2.container.special-alt(style='margin-top:0px;')
             .row.gtr-50
                 .col-8.col-12-narrower
-                    header
-                        h2
-                            | Enroll to Checkout
-                            strong   Investments
-                            |  Scheme
-
+                    article#main
+                      header.special.container
+                        span.icon.fa-envelope
+                        h2 Get In Touch
+                      // One
+                      section.wrapper.style4.special.container.medium
+                        // Content
+                        .content
+                          form
+                            .row.gtr-50
+                              .col-6.col-12-mobile
+                                input(type="text" name="name" placeholder="Name")
+                              .col-6.col-12-mobile
+                                input(type="text" name="email" placeholder="Email")
+                              .col-12
+                                input(type="text" name="subject" placeholder="Subject")
+                              .col-12
+                                textarea(name="message" placeholder="Message" rows="7")
+                              .col-12
+                                ul.buttons
+                                  li
+                                    input.special(type="submit" value="Send Message")
                     footer
                         ul.buttons
                             li
@@ -59,6 +75,30 @@ block content
                         li
                             span.icon.fa-cog
                                 span.label Feature 6
+                        li
+                            span.icon.fa-money
+                                span.label Feature 1
+                        li
+                            span.icon.fa-cart-plus
+                                span.label Feature 2
+                        li
+                            span.icon.fa-laptop
+                                span.label Feature 3
+                        li
+                            span.icon.fa-inbox
+                                span.label Feature 4
+                        li
+                            span.icon.fa-lock
+                                span.label Feature 5
+                        li
+                            span.icon.fa-cog
+                                span.label Feature 6
+                        li
+                            span.icon.fa-clock-o
+                                span.label Feature 1
+                        li
+                            span.icon.fa-volume-up
+                                span.label Feature 2
         //- Two
         section.wrapper.style1.container.special
             .row
