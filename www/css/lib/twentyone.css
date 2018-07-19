@@ -141,7 +141,11 @@ input, select, textarea {
 			text-decoration: none;
 			border: 0;
 		}
-
+    
+    h1 {
+        font-size: 2em;
+        letter-spacing: 0.15em;
+    }
 	h2 {
 		font-size: 1.5em;
 		letter-spacing: 0.1em;
@@ -656,7 +660,7 @@ input, select, textarea {
 		}
 
 		.wrapper.style2 {
-			background-color: #83d3c9;
+			background-color: #8d6e63;
 			/* background-image: url("images/light-bl.svg"), url("images/light-br.svg");
 			background-position: bottom left, bottom right;
 			background-repeat: no-repeat, no-repeat;
@@ -1616,9 +1620,9 @@ input, select, textarea {
 				letter-spacing: 0.025em;
 			}
 
-			p {
+			/* p {
 				text-align: justify;
-			}
+			} */
 
 		/* Section/Article */
 
