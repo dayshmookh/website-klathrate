@@ -25,38 +25,34 @@ block content
     article#main
         header.special.container
             span.icon.fa-bar-chart-o
+            h2  Investments
         //- One
         section.wrapper.style2.container.special-alt(style='margin-top:0px;')
             .row.gtr-50
                 .col-8.col-12-narrower
                     article#main
-                      header.special.container
-                        span.icon.fa-envelope
+                      header
                         h2 Get In Touch
                       // One
-                      section.wrapper.style4.special.container.medium
+                      section.wrapper.style4.special.container.medium#form
                         // Content
                         .content
-                          form
+                          form(style='color:black')
                             .row.gtr-50
-                              .col-6.col-12-mobile
-                                input(type="text" name="name" placeholder="Name")
-                              .col-6.col-12-mobile
+                              .col-12#input
+                                input(type="text" name="name" placeholder="Full Name")
+                              .col-12#input
                                 input(type="text" name="email" placeholder="Email")
-                              .col-12
-                                input(type="text" name="subject" placeholder="Subject")
-                              .col-12
-                                textarea(name="message" placeholder="Message" rows="7")
-                              .col-12
-                                ul.buttons
-                                  li
-                                    input.special(type="submit" value="Send Message")
+                              .col-12#input
+                                input(type="text" name="subject" placeholder="Organization")
+                              .col-12#input
+                                input(type="text" placeholder="Phone" name="phone")
                     footer
                         ul.buttons
                             li
                                 a.button(href="#") Submit
                 .col-4.col-12-narrower.imp-narrower
-                    ul.featured-icons
+                    //ul.featured-icons
                         li
                             span.icon.fa-clock-o
                                 span.label Feature 1
