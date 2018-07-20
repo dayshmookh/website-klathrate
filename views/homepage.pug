@@ -1,0 +1,220 @@
+extends layout.pug
+
+block styles
+    //- Custom styles
+
+block content
+    //- Page content
+    //- Banner
+    section#banner
+        //-
+            ".inner" is set up as an inline-block so it automatically expands
+            in both directions to fit whatever's inside it. This means it won't
+            automatically wrap lines, so be sure to use line breaks where
+            appropriate (<br />).
+        .inner
+            header
+                h2#banner-header(style='min-height:200px;')
+                //- p#banner-p
+            footer
+                ul.buttons.stacked
+                    li
+                        a.button.primary.scrolly(href="#main", style="background: #ff8f00; border-color: #ff8f00") Tell Me More
+    //- Main
+    article#main
+
+        //- how it works
+
+        section.wrapper.style2.container.special-alt
+
+            row.gtr-50
+                .col-12
+                    header(style="font-weight: 700; color: #d7ccc8")
+                        h1(style="font-size: 3em; line-height:20px;") How it works
+
+                        p Our process has been carefully optimised to be quick and convenient.
+
+            .row.gtr-50(style="color:#d7ccc8; font-weight: 500; font-size: 1.3em")
+                .col-12
+                    .image-container
+                        center
+                            img(src="/images/pic01.jpg", alt="how to pic", style="width: 80%;")
+
+
+
+                .col-12
+                    .row
+                        .col-4.col-12-narrower
+                            h2(style="font-weight: 700; line-height:initial; color:#bcaaa4") 1. Online Application
+                            p Some explaination about it
+                        .col-4.col-12-narrower
+                            h2(style="font-weight: 700; line-height:initial; color:#bcaaa4") 2. Klathrate assessment
+                            p Some explaination about it
+                        .col-4.col-12-narrower
+                            h2(style="font-weight: 700; line-height:initial; color:#bcaaa4") 3. Submit Invoices
+                            p Some explaination about it
+
+            //-.row.gtr-50(style="color:#d7ccc8; font-weight: 500; font-size: 1.3em")
+                .col-7.col-12-narrower
+                    #how-to
+                        center
+                            img(src="/images/pic01.jpg", alt="how to pic", style="width: 80%;")
+
+
+
+                .col-5.col-12-narrower
+                    .row
+                        .col-12
+                            h2(style="font-weight: 700; line-height:initial; color:#bcaaa4") Online Application
+                            p Some explaination about it
+                        .col-12
+                            h2(style="font-weight: 700; line-height:initial; color:#bcaaa4") Klathrate assessment
+                            p Some explaination about it
+                        .col-12
+                            h2(style="font-weight: 700; line-height:initial; color:#bcaaa4") Submit Invoices
+                            p Some explaination about it
+
+        header.special.container
+            span.icon.fa-bar-chart-o
+
+            h1(style="font-size: 3em;") How you can benefit
+
+            .row.gtr-50
+                .col-8.col-12-narrower
+
+                    .image-container
+                        center
+                            img(src="/images/pic01.jpg", alt="how to pic", style="width: 80%;")
+
+                .col-4.col-12-narrower.imp-narrower
+                    header
+                        h2 Maximise growth with steady access to working capital with our post-shipment finance.
+
+        section.wrapper.style1.container.special
+            .row.gtr-50
+                .col-4.col-12-narrower
+                    section
+                        span.icon.featured.fa-check
+                        header
+                            h3 This is Something
+                        //-p
+                            | Sed tristique purus vitae volutpat ultrices. Aliquam eu elit eget arcu commodo suscipit dolor nec nibh. Proin a ullamcorper elit, et sagittis turpis. Integer ut fermentum.
+                .col-4.col-12-narrower
+                    section
+                        span.icon.featured.fa-check
+                        header
+                            h3 Also Something
+                        //-p
+                            | Sed tristique purus vitae volutpat ultrices. Aliquam eu elit eget arcu commodo suscipit dolor nec nibh. Proin a ullamcorper elit, et sagittis turpis. Integer ut fermentum.
+                .col-4.col-12-narrower
+                    section
+                        span.icon.featured.fa-check
+                        header
+                            h3 Probably Something
+                        //-p
+                            | Sed tristique purus vitae volutpat ultrices. Aliquam eu elit eget arcu commodo suscipit dolor nec nibh. Proin a ullamcorper elit, et sagittis turpis. Integer ut fermentum.
+
+
+        //- One
+            section.wrapper.style2.container.special-alt
+                .row.gtr-50
+                    .col-8.col-12-narrower
+                        header
+                            h2
+                                | Behold the
+                                strong icons
+                                |  that visualize what you’re all about. or just take up space. your call bro.
+                        p
+                            | Sed tristique purus vitae volutpat ultrices. Aliquam eu elit eget arcu comteger ut fermentum lorem. Lorem ipsum dolor sit amet. Sed tristique purus vitae volutpat ultrices. eu elit eget commodo. Sed tristique purus vitae volutpat ultrices. Aliquam eu elit eget arcu commodo.
+                        footer
+                            ul.buttons
+                                li
+                                    a.button(href="#") Find Out More
+                    .col-4.col-12-narrower.imp-narrower
+                        ul.featured-icons
+                            li
+                                span.icon.fa-clock-o
+                                    span.label Feature 1
+                            li
+                                span.icon.fa-volume-up
+                                    span.label Feature 2
+                            li
+                                span.icon.fa-laptop
+                                    span.label Feature 3
+                            li
+                                span.icon.fa-inbox
+                                    span.label Feature 4
+                            li
+                                span.icon.fa-lock
+                                    span.label Feature 5
+                            li
+                                span.icon.fa-cog
+                                    span.label Feature 6
+        //- Two
+        //-section.wrapper.style1.container.special
+            .row
+                .col-4.col-12-narrower
+                    section
+                        span.icon.featured.fa-check
+                        header
+                            h3 This is Something
+                        p
+                            | Sed tristique purus vitae volutpat ultrices. Aliquam eu elit eget arcu commodo suscipit dolor nec nibh. Proin a ullamcorper elit, et sagittis turpis. Integer ut fermentum.
+                .col-4.col-12-narrower
+                    section
+                        span.icon.featured.fa-check
+                        header
+                            h3 Also Something
+                        p
+                            | Sed tristique purus vitae volutpat ultrices. Aliquam eu elit eget arcu commodo suscipit dolor nec nibh. Proin a ullamcorper elit, et sagittis turpis. Integer ut fermentum.
+                .col-4.col-12-narrower
+                    section
+                        span.icon.featured.fa-check
+                        header
+                            h3 Probably Something
+                        p
+                            | Sed tristique purus vitae volutpat ultrices. Aliquam eu elit eget arcu commodo suscipit dolor nec nibh. Proin a ullamcorper elit, et sagittis turpis. Integer ut fermentum.
+        //- Three
+        section.wrapper.style3.container.special
+            header.major
+                h2 in the news
+
+            include mixins/featured-img.pug
+
+            .row
+                +featuredimg("#", "/images/pic01.jpg", "A Really Fast Train", "Sed tristique purus vitae volutpat commodo suscipit amet sed nibh. Proin a ullamcorper sed blandit. Sed tristique purus vitae volutpat commodo suscipit ullamcorper sed blandit lorem ipsum dolore.")
+
+                +featuredimg("#", "/images/pic01.jpg", "A Really Fast Train", "Sed tristique purus vitae volutpat commodo suscipit amet sed nibh. Proin a ullamcorper sed blandit. Sed tristique purus vitae volutpat commodo suscipit ullamcorper sed blandit lorem ipsum dolore.")
+
+            .row
+                +featuredimg("#", "/images/pic01.jpg", "A Really Fast Train", "Sed tristique purus vitae volutpat commodo suscipit amet sed nibh. Proin a ullamcorper sed blandit. Sed tristique purus vitae volutpat commodo suscipit ullamcorper sed blandit lorem ipsum dolore.")
+
+                +featuredimg("#", "/images/pic01.jpg", "A Really Fast Train", "Sed tristique purus vitae volutpat commodo suscipit amet sed nibh. Proin a ullamcorper sed blandit. Sed tristique purus vitae volutpat commodo suscipit ullamcorper sed blandit lorem ipsum dolore.")
+
+
+
+            footer.major
+                ul.buttons
+                    li
+                        a.button(href="#") See More
+    //- CTA
+    section#cta
+        header
+            h2
+                | Ready to do
+                strong something
+                | ?
+            //-p Proin a ullamcorper elit, et sagittis turpis integer ut fermentum.
+
+        footer
+            ul.buttons
+                li
+                    a.button.primary(href="#") Take My Money
+                //-li
+                    a.button(href="#") LOL Wut
+
+
+block scripts
+    //- custom scripts
+    script(src="/js/lib/typeit.min.js")
+    script(src="/js/init/typeit.homepage.js")

@@ -1,0 +1,22 @@
+html
+    head
+        title Klathrate - #{title}
+        include styles.pug
+
+        block styles
+
+    body.index.is-preload
+        #page-wrapper
+            header#header.alt
+                h1#logo
+                    a(href="/") Klathrate
+
+                include navbar.pug
+
+        main
+            block content
+
+        include footer.pug
+        include scripts.pug
+
+        block scripts
