@@ -1136,10 +1136,15 @@ input, select, textarea {
 			padding: 3em;
 
             text-align: left;
-            margin-left: 6em;
+
             width: 50%;
             /* min-height: 4200px */
 		}
+
+        #banner .inner
+        {
+            margin-left: 6em;
+        }
 
 			#banner .inner header {
 				display: inline-block;
