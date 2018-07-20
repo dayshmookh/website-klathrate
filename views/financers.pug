@@ -13,14 +13,18 @@ block content
             in both directions to fit whatever's inside it. This means it won't
             automatically wrap lines, so be sure to use line breaks where
             appropriate (<br />).
-        .inner
-            header
-                h2#banner-header
+        header.container
+                //h2#banner-header
                 //- p#banner-p
-            footer
-                ul.buttons.stacked
-                    li
-                        a.button.fit.scrolly(href="#main") Tell Me More
+                img(src="/images/logo.png")(style='margin-left:100px;')(data-tilt="")
+                p
+                |   By building the world's first automated,
+                br
+                |   software platform that underwrites and funds
+                br
+                |   cross border trade for fast growing Asian exporters,
+                br
+                |   Drip provides investors access to short term trade finance receivables.
     //- Main
     article#main
         header.special.container
@@ -32,7 +36,7 @@ block content
                 .col-8.col-12-narrower
                     article#main
                       header
-                        h2 Get In Touch
+                        h2(style='margin-left:230px;') Create Investment
                       // One
                       section.wrapper.style4.special.container.medium#form
                         // Content
@@ -48,119 +52,111 @@ block content
                               .col-12#input
                                 input(type="text" placeholder="Phone" name="phone")
                     footer
-                        ul.buttons
+                        ul.buttons(style='margin-left:230px;margin-top:0px;')
                             li
                                 a.button(href="#") Submit
+                            br
+                            br
+                            br
                 .col-4.col-12-narrower.imp-narrower
-                    //ul.featured-icons
-                        li
+                    ul.featured-icons
+                        li(data-aos="zoom-in")
                             span.icon.fa-clock-o
                                 span.label Feature 1
-                        li
+                        li(data-aos="zoom-in")
                             span.icon.fa-volume-up
                                 span.label Feature 2
-                        li
+                        li(data-aos="zoom-in")
                             span.icon.fa-laptop
                                 span.label Feature 3
-                        li
+                        li(data-aos="zoom-in")
                             span.icon.fa-inbox
                                 span.label Feature 4
-                        li
+                        li(data-aos="zoom-in")
                             span.icon.fa-lock
                                 span.label Feature 5
-                        li
+                        li(data-aos="zoom-in")
                             span.icon.fa-cog
                                 span.label Feature 6
-                        li
+                        li(data-aos="zoom-in")
                             span.icon.fa-money
                                 span.label Feature 1
-                        li
+                        li(data-aos="zoom-in")
                             span.icon.fa-cart-plus
                                 span.label Feature 2
-                        li
+                        li(data-aos="zoom-in")
                             span.icon.fa-laptop
                                 span.label Feature 3
-                        li
+                        li(data-aos="zoom-in")
                             span.icon.fa-inbox
                                 span.label Feature 4
-                        li
+                        li(data-aos="zoom-in")
                             span.icon.fa-lock
                                 span.label Feature 5
-                        li
+                        li(data-aos="zoom-in")
                             span.icon.fa-cog
                                 span.label Feature 6
-                        li
-                            span.icon.fa-clock-o
-                                span.label Feature 1
-                        li
-                            span.icon.fa-volume-up
-                                span.label Feature 2
+
         //- Two
         section.wrapper.style1.container.special
+            h2(style='color:black') Earn high yield with a low risk asset class
+                br
+                br
             .row
-                .col-4.col-12-narrower
+                .col-4.col-12-narrower(data-aos="zoom-in-right")
                     section
-                        span.icon.featured.fa-check
+                        span.icon.featured.fa.fa-area-chart(style="color:black;")
                         header
-                            h3 This is Something
+                            h3(style="color:black;") Get Fast!
                         p
-                            | Sed tristique purus vitae volutpat ultrices. Aliquam eu elit eget arcu commodo suscipit dolor nec nibh. Proin a ullamcorper elit, et sagittis turpis. Integer ut fermentum.
-                .col-4.col-12-narrower
+                            | High Yield.
+                            br
+                            | Low Risk.
+                            br
+                            | Short Duration.
+                .col-4.col-12-narrower(data-aos="zoom-in")
                     section
-                        span.icon.featured.fa-check
+                        span.icon.featured.fa.fa-ravelry(style="color:black;")
                         header
-                            h3 Also Something
+                            h3(style="color:black;") Get Big!
                         p
-                            | Sed tristique purus vitae volutpat ultrices. Aliquam eu elit eget arcu commodo suscipit dolor nec nibh. Proin a ullamcorper elit, et sagittis turpis. Integer ut fermentum.
-                .col-4.col-12-narrower
+                            | Diversification.
+                            br
+                            | Global Contacts.
+                            br
+                            | Corporate receivables.
+                .col-4.col-12-narrower(data-aos="zoom-in-left")
                     section
-                        span.icon.featured.fa-check
+                        span.icon.featured.fa-check(style="color:black;")
                         header
-                            h3 Probably Something
+                            h3(style="color:black;") Get Verified!
                         p
-                            | Sed tristique purus vitae volutpat ultrices. Aliquam eu elit eget arcu commodo suscipit dolor nec nibh. Proin a ullamcorper elit, et sagittis turpis. Integer ut fermentum.
-        //- Three
-        section.wrapper.style3.container.special
-            header.major
-                h2
-                    | Next look at this
-                    strong cool stuff
+                            | Global Exposure.
+                            br
+                            | Invest in Verified
+                            br
+                            | jdfdfdshfskfs
+    //- Three
 
-            include mixins/featured-img.pug
-
-            .row
-                +featuredimg("#", "/images/pic01.jpg", "A Really Fast Train", "Sed tristique purus vitae volutpat commodo suscipit amet sed nibh. Proin a ullamcorper sed blandit. Sed tristique purus vitae volutpat commodo suscipit ullamcorper sed blandit lorem ipsum dolore.")
-
-                +featuredimg("#", "/images/pic01.jpg", "A Really Fast Train", "Sed tristique purus vitae volutpat commodo suscipit amet sed nibh. Proin a ullamcorper sed blandit. Sed tristique purus vitae volutpat commodo suscipit ullamcorper sed blandit lorem ipsum dolore.")
-
-            .row
-                +featuredimg("#", "/images/pic01.jpg", "A Really Fast Train", "Sed tristique purus vitae volutpat commodo suscipit amet sed nibh. Proin a ullamcorper sed blandit. Sed tristique purus vitae volutpat commodo suscipit ullamcorper sed blandit lorem ipsum dolore.")
-
-                +featuredimg("#", "/images/pic01.jpg", "A Really Fast Train", "Sed tristique purus vitae volutpat commodo suscipit amet sed nibh. Proin a ullamcorper sed blandit. Sed tristique purus vitae volutpat commodo suscipit ullamcorper sed blandit lorem ipsum dolore.")
-
-
-
-            footer.major
-                ul.buttons
-                    li
-                        a.button(href="#") See More
     //- CTA
     section#cta
         header
             h2
                 | Ready to do
-                strong something
+                strong   INVESTment
                 | ?
-            p Proin a ullamcorper elit, et sagittis turpis integer ut fermentum.
+            //p Proin a ullamcorper elit, et sagittis turpis integer ut fermentum.
         footer
             ul.buttons
                 li
-                    a.button.primary(href="#") Take My Money
+                    a.button.primary(href="#") Let's Invest
                 li
-                    a.button(href="#") LOL Wut
+                    a.button(href="#") Get More
 
 
 block scripts
     //- custom scripts
+    script.
+      AOS.init();
     script(src="/js/lib/typeit.min.js")
     script(src="/js/init/typeit.homepage.js")
