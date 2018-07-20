@@ -2,7 +2,7 @@ extends layout.pug
 
 block styles
     //- Custom styles
-    link(rel="stylesheet", href="/css/lib/financers.css")
+    //-link(rel="stylesheet", href="/css/lib/financers.css")
 
 block content
     //- Page content
@@ -13,52 +13,50 @@ block content
             in both directions to fit whatever's inside it. This means it won't
             automatically wrap lines, so be sure to use line breaks where
             appropriate (<br />).
-        header.container
-                //h2#banner-header
-                //- p#banner-p
-                img(src="/images/logo.png")(style='margin-left:100px;')(data-tilt="")
-                p
-                |   By building the world's first automated,
-                br
-                |   software platform that underwrites and funds
-                br
-                |   cross border trade for fast growing Asian exporters,
-                br
-                |   Drip provides investors access to short term trade finance receivables.
+        .inner
+            header
+                img(src="/images/logo-small.png", alt="logo", style="max-height: 80px;", data-tilt)  
+            
+                h2#banner-header(style="font-size:1.2em;")
+                //-p#banner-p
+                
+
+
     //- Main
     article#main
         header.special.container
-            span.icon.fa-bar-chart-o
-            h2  Investments
+            span.icon.fa-dollar
+            h1(style="font-size: 3em;")  Investments
         //- One
-        section.wrapper.style2.container.special-alt(style='margin-top:0px;')
+        section.wrapper.style2.container.special-alt
+
+            header
+                h3(style="font-size: 2em;") Create Investment
             .row.gtr-50
-                .col-8.col-12-narrower
-                    article#main
-                      header
-                        h2(style='margin-left:230px;') Create Investment
-                      // One
-                      section.wrapper.style4.special.container.medium#form
+                .col-7.col-12-narrower
+                    
+                    
+                    // One
+                    section.wrapper.style4.special.container.medium#form
                         // Content
                         .content
-                          form(style='color:black')
+                        form#investform(style='color:black' action="#")
                             .row.gtr-50
-                              .col-12#input
-                                input(type="text" name="name" placeholder="Full Name")
-                              .col-12#input
-                                input(type="text" name="email" placeholder="Email")
-                              .col-12#input
-                                input(type="text" name="subject" placeholder="Organization")
-                              .col-12#input
-                                input(type="text" placeholder="Phone" name="phone")
+                                .col-12#input
+                                    input(type="text" name="name" placeholder="Full Name")
+                                .col-12#input
+                                    input(type="text" name="email" placeholder="Email")
+                                .col-12#input
+                                    input(type="text" name="subject" placeholder="Organization")
+                                .col-12#input
+                                    input(type="text" placeholder="Phone" name="phone")
                     footer
-                        ul.buttons(style='margin-left:230px;margin-top:0px;')
+                        ul.buttons
                             li
-                                a.button(href="#") Submit
-                            br
-                            br
-                            br
-                .col-4.col-12-narrower.imp-narrower
+                                a.button(href="javascript:document.getElementById('investform').submit();") Submit
+        
+                            
+                .col-5.col-12-narrower.imp-narrower
                     ul.featured-icons
                         li(data-aos="zoom-in")
                             span.icon.fa-clock-o
@@ -78,28 +76,11 @@ block content
                         li(data-aos="zoom-in")
                             span.icon.fa-cog
                                 span.label Feature 6
-                        li(data-aos="zoom-in")
-                            span.icon.fa-money
-                                span.label Feature 1
-                        li(data-aos="zoom-in")
-                            span.icon.fa-cart-plus
-                                span.label Feature 2
-                        li(data-aos="zoom-in")
-                            span.icon.fa-laptop
-                                span.label Feature 3
-                        li(data-aos="zoom-in")
-                            span.icon.fa-inbox
-                                span.label Feature 4
-                        li(data-aos="zoom-in")
-                            span.icon.fa-lock
-                                span.label Feature 5
-                        li(data-aos="zoom-in")
-                            span.icon.fa-cog
-                                span.label Feature 6
+                        
 
         //- Two
         section.wrapper.style1.container.special
-            h2(style='color:black') Earn high yield with a low risk asset class
+            h2(style="font-size: 2em;") Earn high yield with a low risk asset class
                 br
                 br
             .row
@@ -134,16 +115,15 @@ block content
                             | Global Exposure.
                             br
                             | Invest in Verified
-                            br
-                            | jdfdfdshfskfs
+                            
     //- Three
 
     //- CTA
     section#cta
         header
             h2
-                | Ready to do
-                strong   INVESTment
+                | Ready to 
+                strong   INVEST
                 | ?
             //p Proin a ullamcorper elit, et sagittis turpis integer ut fermentum.
         footer
@@ -157,5 +137,5 @@ block content
 block scripts
     //- custom scripts
     script(src="/js/lib/typeit.min.js")
-    script(src="/js/init/typeit.homepage.js")
+    script(src="/js/init/typeit.financers.js")
     script(src="/js/lib/tilt.jquery.min.js")
