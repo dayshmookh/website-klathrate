@@ -1,0 +1,47 @@
+extends layout.pug
+
+block styles
+    //- Custom styles
+
+block content
+    //- Page content
+    //- Banner
+    section#banner
+
+        .container
+            .row.container
+                .col-12-narrower.col-6
+                    header
+                        h2(style='min-height:200px;')
+                            p We're happy to answer any questions you have. Don't hesitate, Get in Touch with us.
+
+                .col-12-narrower.col-6
+                    section.wrapper.style4.special.container.medium(style="background-image: url('images/bg-01.jpg');")
+                        // Content
+                        .content
+                            form
+                                .row.gtr-50
+                                    .col-6.col-12-mobile
+                                        input(type="text", name="name", placeholder="Name")
+                                    .col-6.col-12-mobile
+                                        input(type="text", name="email", placeholder="Email")
+                                    .col-12
+                                        input(type="text", name="subject", placeholder="Subject")
+                                    .col-12
+                                        textarea(name="message", placeholder="Message", rows="7")
+                                    .col-12
+                                        ul.buttons
+                                            li
+                                                input.special(type="submit", value="Send Message")
+
+                //-footer
+                    ul.buttons.stacked
+                        li
+                            a.button.primary.scrolly(href="#main", style="background: #ff8f00; border-color: #ff8f00") Tell Me More
+
+
+
+block scripts
+    //- custom scripts
+    script(src="/js/lib/typeit.min.js")
+    //-script(src="/js/init/typeit.homepage.js")
