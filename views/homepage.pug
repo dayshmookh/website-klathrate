@@ -2,6 +2,7 @@ extends layout.pug
 
 block styles
     //- Custom styles
+    link(rel="stylesheet", href="/css/slider.css")
 
 block content
     //- Page content
@@ -14,35 +15,41 @@ block content
             appropriate (<br />).
         .inner
             header
+                
+                img(src="/images/logo-small.png", alt="logo", style="max-height: 80px;")  
+
                 h2#banner-header(style='min-height:200px;')
                 //- p#banner-p
             footer
                 ul.buttons.stacked
                     li
-                        a.button.primary.scrolly(href="#main", style="background: #ff8f00; border-color: #ff8f00") Tell Me More
+                        a.button.primary.scrolly(href="http://demo.quanram.com/register", style="background: #ff8f00; border-color: #ff8f00") Register
     //- Main
     article#main
 
         //- how it works
 
-        section.wrapper.style2.container.special-alt
+        section.wrapper.style2.container.special-alt(data-aos="fade-up")
 
             row.gtr-50
                 .col-12
-                    header(style="font-weight: 700; color: #d7ccc8")
-                        h1(style="font-size: 3em; line-height:20px;") How it works
+                    header(style="font-weight: 700; color: #d7ccc8", data-aos="flip-up")
+                        h1(style="font-size: 3em;") How it works
                         
                         p Our process has been carefully optimised to be quick and convenient.
 
             .row.gtr-50(style="color:#d7ccc8; font-weight: 500; font-size: 1.3em")
                 .col-12
-                    .image-container
+                    .image-container(data-aos="flip-up", data-aos-offset="250")
                         center
-                            img(src="/images/pic01.jpg", alt="how to pic", style="width: 80%;")
-                    
+                            //- img(src="/images/pic01.jpg", alt="how to pic", style="width: 80%;")
+                            video(width="100%", controls)
+                                source(src="/videos/how-it-works.mp4", type="video/mp4")
+                                source(src="/videos/how-it-works.webm", type="video/webm")
+                                |   Your browser does not support the video tag.
 
 
-                .col-12
+                //-.col-12
                     .row
                         .col-4.col-12-narrower
                             h2(style="font-weight: 700; line-height:initial; color:#bcaaa4") 1. Online Application
@@ -75,45 +82,92 @@ block content
                             p Some explaination about it
 
         header.special.container
-            span.icon.fa-bar-chart-o
+            span.icon.fa-fire
             
-            h1(style="font-size: 3em;") How you can benefit
+            h1(style="font-size: 3em;", data-aos="flip-up") How you can benefit
+
+                
+          
+
+        section.wrapper.style1.container.special
+            .row.gtr-50
+                .col-3.col-6-narrow
+                    section(data-aos="zoom-in-down")
+                        span.icon.featured.fa-bar-chart
+                        header
+                            h3 Collateral free working capital
+                        //-p
+                            | Sed tristique purus vitae volutpat ultrices. Aliquam eu elit eget arcu commodo suscipit dolor nec nibh. Proin a ullamcorper elit, et sagittis turpis. Integer ut fermentum.
+                .col-3.col-6-narrow
+                    section(data-aos="zoom-in-down")
+                        span.icon.featured.fa-dollar
+                        header
+                            h3 Credit limit up to $2.5 Million
+                        //-p
+                            | Sed tristique purus vitae volutpat ultrices. Aliquam eu elit eget arcu commodo suscipit dolor nec nibh. Proin a ullamcorper elit, et sagittis turpis. Integer ut fermentum.
+                .col-3.col-6-narrow
+                    section(data-aos="zoom-in-down")
+                        span.icon.featured.fa-ticket
+                        header
+                            h3 Advance of up to 80% invoice value
+                        //-p
+                            | Sed tristique purus vitae volutpat ultrices. Aliquam eu elit eget arcu commodo suscipit dolor nec nibh. Proin a ullamcorper elit, et sagittis turpis. Integer ut fermentum.
+        
+                .col-3.col-6-narrow
+                    section(data-aos="zoom-in-down")
+                        span.icon.featured.fa-shield
+                        header
+                            h3 Protection against buyer bankruptcy
+                        //-p
+                            | Sed tristique purus vitae volutpat ultrices. Aliquam eu elit eget arcu commodo suscipit dolor nec nibh. Proin a ullamcorper elit, et sagittis turpis. Integer ut fermentum.
+        
+        section.wrapper.style1.container.special
         
             .row.gtr-50
                 .col-8.col-12-narrower
+                    //- Slideshow container
+                    .slideshow-container(data-tilt)
+                        //- Full-width images with number and caption text
+                        .mySlides.fade
+                            //-.numbertext 1 / 3
+                            //- img(src="/images/pic01.jpg", style="width:100%")
+                            
+                            .text We were able to double our sales with timely access to working capital from Klathrate 
+                            .author Some author name
+                        .mySlides.fade
+                            //-.numbertext 2 / 3
+                            //- img(src="/images/pic02.jpg", style="width:100%")
+                            
+                            .text Our company now sells to 6 more buyers in 4 different countries since we now offer credit terms with Klathrate's help
+                            .author Some author name
+                        .mySlides.fade
+                            //-.numbertext 3 / 3
+                            //- img(src="/images/pic03.jpg", style="width:100%")
+                            
+                            .text We were able to fulfill a sudden high demand of orders on receiving working capital from Klathrate in as little as a week
+                            .author Some author name
+                        //- Next and previous buttons
+                        //-a.prev(onclick="plusSlides(-1)") ❮
+                        //-a.next(onclick="plusSlides(1)") ❯
+                    
+                    //- The dots/circles
+                    //-div(style="text-align:center")
+                        //span.dot(onclick="currentSlide(1)")
+                        //span.dot(onclick="currentSlide(2)")
+                        //span.dot(onclick="currentSlide(3)")
+                        span.dot
+                        span.dot
+                        span.dot
 
-                    .image-container
+                    //-.image-container
                         center
                             img(src="/images/pic01.jpg", alt="how to pic", style="width: 80%;")
                     
                 .col-4.col-12-narrower.imp-narrower
-                    header
+                    header(data-aos="zoom-out-up")
                         h2 Maximise growth with steady access to working capital with our post-shipment finance.
-            
-        section.wrapper.style1.container.special
-            .row.gtr-50
-                .col-4.col-12-narrower
-                    section
-                        span.icon.featured.fa-check
-                        header
-                            h3 This is Something
-                        //-p
-                            | Sed tristique purus vitae volutpat ultrices. Aliquam eu elit eget arcu commodo suscipit dolor nec nibh. Proin a ullamcorper elit, et sagittis turpis. Integer ut fermentum.
-                .col-4.col-12-narrower
-                    section
-                        span.icon.featured.fa-check
-                        header
-                            h3 Also Something
-                        //-p
-                            | Sed tristique purus vitae volutpat ultrices. Aliquam eu elit eget arcu commodo suscipit dolor nec nibh. Proin a ullamcorper elit, et sagittis turpis. Integer ut fermentum.
-                .col-4.col-12-narrower
-                    section
-                        span.icon.featured.fa-check
-                        header
-                            h3 Probably Something
-                        //-p
-                            | Sed tristique purus vitae volutpat ultrices. Aliquam eu elit eget arcu commodo suscipit dolor nec nibh. Proin a ullamcorper elit, et sagittis turpis. Integer ut fermentum.
-        
+          
+    
         
         //- One
             section.wrapper.style2.container.special-alt
@@ -175,7 +229,7 @@ block content
                         p
                             | Sed tristique purus vitae volutpat ultrices. Aliquam eu elit eget arcu commodo suscipit dolor nec nibh. Proin a ullamcorper elit, et sagittis turpis. Integer ut fermentum.
         //- Three
-        section.wrapper.style3.container.special
+        //-section.wrapper.style3.container.special
             header.major
                 h2 in the news
                 
@@ -198,9 +252,9 @@ block content
                     li
                         a.button(href="#") See More
     //- CTA
-    section#cta
+    section#cta(style="margin-top:24px;")
         header
-            h2
+            h2(data-aos="zoom-out-up")
                 | Ready to do 
                 strong something
                 | ?
@@ -208,13 +262,15 @@ block content
         
         footer
             ul.buttons
-                li
-                    a.button.primary(href="#") Take My Money
-                //-li
-                    a.button(href="#") LOL Wut
+                li(data-aos="zoom-out-left")
+                    a.button.primary(href="/about", style="background: #ff8f00; border-color: #ff8f00") Get in touch
+                li(data-aos="zoom-out-right")
+                    a.button(href="http://demo.quanram.com/register") Register
             
             
 block scripts
     //- custom scripts
     script(src="/js/lib/typeit.min.js")
     script(src="/js/init/typeit.homepage.js")
+    script(src="/js/init/slider.js")
+    script(src="/js/lib/tilt.jquery.min.js")
