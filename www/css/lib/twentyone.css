@@ -132,7 +132,7 @@ input, select, textarea {
 		color: inherit;
 		font-weight: 300;
 		line-height: 1.75em;
-		margin-bottom: 1em;
+		margin-bottom: 0.25em;
 		text-transform: uppercase;
 	}
 
@@ -195,12 +195,13 @@ input, select, textarea {
 		margin-bottom: 5em;
 		padding-top: 7em;
 		position: relative;
+        color: black;
 		text-align: center;
 	}
 
 		header.special:before, header.special:after {
-			border-bottom: solid 1.5px;
-			border-top: solid 1.5px;
+			border-bottom: 2px solid black;
+			border-top: 2px solid black;;
 			content: '';
 			height: 7px;
 			opacity: 0.1;
@@ -1184,6 +1185,29 @@ input, select, textarea {
 			margin-bottom: 2em;
 		}
 
+
+    #cta-finance {
+		/* background-attachment: scroll, scroll, scroll, fixed;
+		background-color: #645862;
+		background-image: url("images/light-tl.svg"), url("images/light-tr.svg"), url("images/overlay.png"), url("../../images/banner.jpg");
+		background-position: top left, top right, top left, bottom center;
+		background-repeat: no-repeat, no-repeat, repeat, no-repeat;
+        background-size: 25em, 25em, auto, cover; */
+
+        background-attachment: scroll, fixed;
+		background-color: #645862;
+		background-image: url("images/overlay.png"), url("../../images/light.jpg");
+		background-position: top left, bottom center;
+		background-repeat: repeat, no-repeat;
+        background-size: auto, cover;
+
+		color: #fff;
+		padding: 5em;
+		text-align: center;
+	}
+
+
+
 /* Footer */
 
 	#footer {
@@ -1613,7 +1637,7 @@ input, select, textarea {
 				top: 0;
 				width: 275px;
 				z-index: 10002;
-				background: #1c2021;
+				background: #3e2723;
 				color: #fff;
 				font-size: 0.8em;
 				letter-spacing: 0.075em;

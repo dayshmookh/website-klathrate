@@ -28,9 +28,9 @@ router.get('/privacypolicy', function (req, res) {
     });
 });
 
-router.get('/businesses', function (req, res) {
-    res.render('businesses', {
-        title: "Businesses"
+router.get('/business', function (req, res) {
+    res.render('business', {
+        title: "Business"
     });
 });
 

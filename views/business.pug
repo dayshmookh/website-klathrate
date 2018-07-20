@@ -7,7 +7,7 @@ block styles
 block content
     //- Page content
     //- Banner
-    section#banner(style='background-image:url("/images/light.jpg")')
+    section#banner
         //-
             ".inner" is set up as an inline-block so it automatically expands
             in both directions to fit whatever's inside it. This means it won't
@@ -15,27 +15,67 @@ block content
             appropriate (<br />).
         .inner
             header
-                img(src="/images/logo-small.png", alt="logo", style="max-height: 80px;", data-tilt)  
-            
-                h2#banner-header(style="font-size:1.2em;")
+                img(src="/images/logo-small.png", alt="logo", style="max-height: 80px;", data-tilt)
+
+                h2#banner-header(style="font-size:1.7em;min-height:200px;")
+
+                h2(style="font-size:1.5em; font-weight:900;color:yellow") Simple | Fast | Credible
                 //-p#banner-p
-                
+
 
 
     //- Main
     article#main
-        header.special.container
-            span.icon.fa-dollar
-            h1(style="font-size: 3em;")  Investments
         //- One
-        section.wrapper.style2.container.special-alt
+        section.wrapper.style1.container.special
+            header.special.container
+                span.icon.fa-dollar
+
+                h1(style="font-size: 2em;")  Klatharate's   Advantage
+                h1(style="font-size: 1em;") What Klatharate strives to offer
+                br
+                br
+            .row
+                .col-4.col-12-narrower(data-aos="zoom-in-right")
+                    section
+                        span.icon.featured.fa.fa-area-chart(style="color:black;")
+                        header
+                            h3(style="color:black;") Quick access to capital
+                        p
+                            | Raise capital within
+                            br
+                            | 24-72 hours *
+
+
+                .col-4.col-12-narrower(data-aos="zoom-in")
+                    section
+                        span.icon.featured.fa.fa-ravelry(style="color:black;")
+                        header
+                            h3(style="color:black;") No Collateral
+                        p
+                            | Save your assets, use invoice
+                            br
+                            | as pseudo collateral
+
+                .col-4.col-12-narrower(data-aos="zoom-in-left")
+                    section
+                        span.icon.featured.fa-check(style="color:black;")
+                        header
+                            h3(style="color:black;") Hassle-free
+                        p
+                            | Paperless & transparent digital
+                            br
+                            | experience
+
+
+        //section.wrapper.style2.container.special-alt
 
             header
                 h3(style="font-size: 2em;") Create Investment
             .row.gtr-50
                 .col-7.col-12-narrower
-                    
-                    
+
+
                     // One
                     section.wrapper.style4.special.container.medium#form
                         // Content
@@ -54,8 +94,8 @@ block content
                         ul.buttons
                             li
                                 a.button(href="javascript:document.getElementById('investform').submit();") Submit
-        
-                            
+
+
                 .col-5.col-12-narrower.imp-narrower
                     ul.featured-icons
                         li(data-aos="zoom-in")
@@ -76,17 +116,21 @@ block content
                         li(data-aos="zoom-in")
                             span.icon.fa-cog
                                 span.label Feature 6
-                        
+
 
         //- Two
         section.wrapper.style1.container.special
-            h2(style="font-size: 2em;") Earn high yield with a low risk asset class
+            header.special.container
+                span.icon.fa.fa-bullseye(style="color:black")
+
+                h1(style="font-size: 2em;color:#83d3c9")  Klatharate's   Uniqueness
+                h1(style="font-size: 1em;") Why Klatharate's at this position
                 br
                 br
             .row
                 .col-4.col-12-narrower(data-aos="zoom-in-right")
                     section
-                        span.icon.featured.fa.fa-area-chart(style="color:black;")
+                        span.icon.featured.fa.fa-circle-o-notch(style="color:black;")
                         header
                             h3(style="color:black;") Get Fast!
                         p
@@ -115,14 +159,14 @@ block content
                             | Global Exposure.
                             br
                             | Invest in Verified
-                            
+
     //- Three
 
     //- CTA
-    section#cta-finance
+    section#cta
         header
             h2
-                | Ready to 
+                | Ready to
                 strong   INVEST
                 | ?
             //p Proin a ullamcorper elit, et sagittis turpis integer ut fermentum.
@@ -137,5 +181,5 @@ block content
 block scripts
     //- custom scripts
     script(src="/js/lib/typeit.min.js")
-    script(src="/js/init/typeit.financers.js")
+    script(src="/js/init/typeit.business.js")
     script(src="/js/lib/tilt.jquery.min.js")
