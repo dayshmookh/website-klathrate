@@ -430,6 +430,7 @@ input, select, textarea {
 			margin: 0 0 1.5em 0;
 			opacity: 0.35;
 			text-align: center;
+
 		}
 
 			.icon.featured:before {
@@ -657,6 +658,7 @@ input, select, textarea {
 
 		.wrapper.style2 {
 			background-color: #83d3c9;
+            padding: 0px;
 			/* background-image: url("images/light-bl.svg"), url("images/light-br.svg");
 			background-position: bottom left, bottom right;
 			background-repeat: no-repeat, no-repeat;
@@ -1086,7 +1088,7 @@ input, select, textarea {
 
         background-attachment: scroll, fixed;
 		background-color: #645862;
-		background-image: url("images/overlay.png"), url("../../images/banner.jpg");
+		background-image: url("images/overlay.png"), url("../../images/dollar.jpg");
 		background-position: top left, bottom center;
 		background-repeat: repeat, no-repeat;
         background-size: auto, cover;
@@ -1807,3 +1809,14 @@ input, select, textarea {
 			}
 
 	}
+
+#form
+{
+    margin-left: 80px;
+    width: 600px;
+    margin-top: 0px;
+}
+#input
+{
+    margin-left: 0px;
+}
