@@ -195,12 +195,13 @@ input, select, textarea {
 		margin-bottom: 5em;
 		padding-top: 7em;
 		position: relative;
+        color: black;
 		text-align: center;
 	}
 
 		header.special:before, header.special:after {
-			border-bottom: solid 1.5px;
-			border-top: solid 1.5px;
+			border-bottom: 2px solid black;
+			border-top: 2px solid black;;
 			content: '';
 			height: 7px;
 			opacity: 0.1;
