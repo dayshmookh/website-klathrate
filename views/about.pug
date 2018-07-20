@@ -6,17 +6,16 @@ block styles
 block content
     //- Page content
     //- Banner
-    section#banner
-        
-        .container
-            .row.container
-                .col-12-narrower.col-6
-                    header
-                        h2(style='min-height:200px;')
-                            p Some text to encourage people to get in touch with you
+    section#aboutbanner
 
-                .col-12-narrower.col-6
-                    section.wrapper.style4.special.container.medium
+        .container
+            .row
+                .col-12-narrow.col-6
+                    header
+                        h1 We're happy to answer any questions you have. Get in Touch with us.
+
+                .col-12-narrow.col-6
+                    section.wrapper.style4.special.container.medium(style="background : #1a237e ;")
                         // Content
                         .content
                             form
@@ -38,9 +37,9 @@ block content
                     ul.buttons.stacked
                         li
                             a.button.primary.scrolly(href="#main", style="background: #ff8f00; border-color: #ff8f00") Tell Me More
-        
-                
-            
+
+
+
 block scripts
     //- custom scripts
     script(src="/js/lib/typeit.min.js")

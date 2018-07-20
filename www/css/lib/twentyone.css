@@ -141,7 +141,7 @@ input, select, textarea {
 			text-decoration: none;
 			border: 0;
 		}
-    
+
     h1 {
         font-size: 2em;
         letter-spacing: 0.15em;
@@ -967,6 +967,86 @@ input, select, textarea {
 			opacity: 1;
 		}
 	}
+    #aboutbanner {
+		/* background-attachment: scroll, scroll, scroll, fixed;
+		background-color: #645862;
+		background-image: url("images/light-bl.svg"), url("images/light-br.svg"), url("images/overlay.png"), url("../../images/banner.jpg");
+		background-position: bottom left, bottom right, top left, top center;
+		background-repeat: no-repeat, no-repeat, repeat, no-repeat;
+        background-size: 25em, 25em, auto, cover; */
+
+        background-attachment: scroll, fixed;
+		background-color: #645862;
+		background-image: url("images/overlay-gradient.png"), url("../../images/HQ1.jpg");
+		background-position: top left, top center;
+		background-repeat: no-repeat, no-repeat;
+		background-size: cover, cover;
+
+		color: #fff;
+		cursor: default;
+        padding: 6em 0;
+
+        text-align: left;
+        height: 100vh;
+	}
+
+		#aboutbanner .inner {
+			-moz-animation: reveal-banner 1s 0.25s ease-in-out;
+			-webkit-animation: reveal-banner 1s 0.25s ease-in-out;
+			-ms-animation: reveal-banner 1s 0.25s ease-in-out;
+			animation: reveal-banner 1s 0.25s ease-in-out;
+			-moz-animation-fill-mode: forwards;
+			-webkit-animation-fill-mode: forwards;
+			-ms-animation-fill-mode: forwards;
+			animation-fill-mode: forwards;
+			/* background: rgba(52, 27, 43, 0.5); */
+			color: #fff;
+			display: inline-block;
+			opacity: 0;
+			padding: 3em;
+
+            text-align: left;
+            margin-left: 6em;
+            /* min-height: 4200px */
+		}
+
+			#aboutbanner  header {
+				display: inline-block;
+				/* border-bottom: solid 2px;
+				border-top: solid 2px; */
+				margin: 0 0 2em 0;
+				padding: 3px 0 3px 0;
+			}
+
+				#aboutbanner  header h1 {
+					/* border-bottom: solid 2px;
+					border-top: solid 2px; */
+					font-size: 2em;
+					font-weight: 900;
+					letter-spacing: 0.2em;
+					margin: 0;
+					padding-left: 0.05em;
+                    padding-top: 3em;
+					position: relative;
+					text-transform: uppercase;
+				}
+
+			#aboutbanner  p {
+				letter-spacing: 0.1em;
+				margin: 0;
+				text-transform: uppercase;
+			}
+
+				#aboutbanner  p a {
+					color: inherit;
+					font-weight: 400;
+					text-decoration: none;
+				}
+
+			#aboutbanner  footer {
+				margin: 2em 0 0 0;
+			}
+
 
 	#banner {
 		/* background-attachment: scroll, scroll, scroll, fixed;
@@ -975,7 +1055,7 @@ input, select, textarea {
 		background-position: bottom left, bottom right, top left, top center;
 		background-repeat: no-repeat, no-repeat, repeat, no-repeat;
         background-size: 25em, 25em, auto, cover; */
-        
+
         background-attachment: scroll, fixed;
 		background-color: #645862;
 		background-image: url("images/overlay-gradient.png"), url("../../images/banner.jpg");
@@ -986,7 +1066,7 @@ input, select, textarea {
 		color: #fff;
 		cursor: default;
         padding: 6em 0;
-        
+
         text-align: left;
         height: 100vh;
 	}
@@ -1005,7 +1085,7 @@ input, select, textarea {
 			display: inline-block;
 			opacity: 0;
 			padding: 3em;
-            
+
             text-align: left;
             margin-left: 6em;
             width: 50%;
@@ -1087,14 +1167,14 @@ input, select, textarea {
 		background-position: top left, top right, top left, bottom center;
 		background-repeat: no-repeat, no-repeat, repeat, no-repeat;
         background-size: 25em, 25em, auto, cover; */
-        
+
         background-attachment: scroll, fixed;
 		background-color: #645862;
 		background-image: url("images/overlay.png"), url("../../images/banner.jpg");
 		background-position: top left, bottom center;
 		background-repeat: repeat, no-repeat;
         background-size: auto, cover;
-        
+
 		color: #fff;
 		padding: 5em;
 		text-align: center;
@@ -1151,6 +1231,7 @@ input, select, textarea {
 				padding-top: 5.5em;
 				margin-bottom: 4em;
 			}
+
 
 	}
 
@@ -1273,6 +1354,13 @@ input, select, textarea {
 				}
 
 		/* Banner */
+
+            #aboutbanner {
+
+                text-align: center;
+                top: initial;
+
+            }
 
 			#banner {
                 /* background-size: 15em, 15em, auto, cover; */
@@ -1738,7 +1826,7 @@ input, select, textarea {
 					background: none;
 					display: block;
                     padding: 0 1.5em;
-                    
+
                     text-align: center;
                     margin-left: 0em;
                     margin-top: 6em;
