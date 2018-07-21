@@ -19,6 +19,21 @@ img.person:hover {
 }
 
 img.award {
-    width: 150px;
-    height: 150px;
+    max-width: 100%;
+    max-height: 150px;
+}
+
+.news-item {
+    border: 5px double #83d3c9;
+    border-bottom-right-radius: 24px;
+    border-bottom-left-radius: 8px;
+    padding: 16px;
+    background: #fdfdfd;
+    /* border-bottom: 3px double #343434;
+    border-right: 3px double #343434; */
+
+}
+
+.headline {
+    font-weight: 600;
 }
