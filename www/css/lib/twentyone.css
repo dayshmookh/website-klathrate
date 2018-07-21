@@ -195,12 +195,13 @@ input, select, textarea {
 		margin-bottom: 5em;
 		padding-top: 7em;
 		position: relative;
+        color: black;
 		text-align: center;
 	}
 
 		header.special:before, header.special:after {
-			border-bottom: solid 1.5px;
-			border-top: solid 1.5px;
+			border-bottom: 2px solid black;
+			border-top: 2px solid black;;
 			content: '';
 			height: 7px;
 			opacity: 0.1;
@@ -1071,7 +1072,55 @@ input, select, textarea {
         height: 100vh;
 	}
 
-		#banner .inner {
+    #banner-finance {
+		/* background-attachment: scroll, scroll, scroll, fixed;
+		background-color: #645862;
+		background-image: url("images/light-bl.svg"), url("images/light-br.svg"), url("images/overlay.png"), url("../../images/banner.jpg");
+		background-position: bottom left, bottom right, top left, top center;
+		background-repeat: no-repeat, no-repeat, repeat, no-repeat;
+        background-size: 25em, 25em, auto, cover; */
+
+        background-attachment: scroll, fixed;
+		background-color: #645862;
+		background-image: url("images/overlay-gradient.png"), url("../../images/light.jpg");
+		background-position: top left, top center;
+		background-repeat: no-repeat, no-repeat;
+		background-size: cover, cover;
+
+		color: #fff;
+		cursor: default;
+        padding: 150px;
+
+        text-align: left;
+        height: 100vh;
+	}
+
+    #banner-business {
+		/* background-attachment: scroll, scroll, scroll, fixed;
+		background-color: #645862;
+		background-image: url("images/light-bl.svg"), url("images/light-br.svg"), url("images/overlay.png"), url("../../images/banner.jpg");
+		background-position: bottom left, bottom right, top left, top center;
+		background-repeat: no-repeat, no-repeat, repeat, no-repeat;
+        background-size: 25em, 25em, auto, cover; */
+
+        background-attachment: scroll, fixed;
+		background-color: #645862;
+		background-image: url("images/overlay-gradient.png"), url("../../images/ship.jpg");
+		background-position: top left, top center;
+		background-repeat: no-repeat, no-repeat;
+		background-size: cover, cover;
+
+		color: #fff;
+		cursor: default;
+        padding: 150px;
+
+        text-align: left;
+        height: 100vh;
+	}
+
+		#banner-finance .inner,
+        #banner-business .inner,
+        #banner .inner{
 			-moz-animation: reveal-banner 1s 0.25s ease-in-out;
 			-webkit-animation: reveal-banner 1s 0.25s ease-in-out;
 			-ms-animation: reveal-banner 1s 0.25s ease-in-out;
@@ -1087,10 +1136,15 @@ input, select, textarea {
 			padding: 3em;
 
             text-align: left;
-            margin-left: 6em;
+
             width: 50%;
             /* min-height: 4200px */
 		}
+
+        #banner .inner
+        {
+            margin-left: 6em;
+        }
 
 			#banner .inner header {
 				display: inline-block;
@@ -1183,6 +1237,49 @@ input, select, textarea {
 		#cta header {
 			margin-bottom: 2em;
 		}
+
+
+    #cta-finance {
+		/* background-attachment: scroll, scroll, scroll, fixed;
+		background-color: #645862;
+		background-image: url("images/light-tl.svg"), url("images/light-tr.svg"), url("images/overlay.png"), url("../../images/banner.jpg");
+		background-position: top left, top right, top left, bottom center;
+		background-repeat: no-repeat, no-repeat, repeat, no-repeat;
+        background-size: 25em, 25em, auto, cover; */
+
+        background-attachment: scroll, fixed;
+		background-color: #645862;
+		background-image: url("images/overlay.png"), url("../../images/light.jpg");
+		background-position: top left, bottom center;
+		background-repeat: repeat, no-repeat;
+        background-size: auto, cover;
+
+		color: #fff;
+		padding: 5em;
+		text-align: center;
+	}
+
+    #cta-business {
+		/* background-attachment: scroll, scroll, scroll, fixed;
+		background-color: #645862;
+		background-image: url("images/light-tl.svg"), url("images/light-tr.svg"), url("images/overlay.png"), url("../../images/banner.jpg");
+		background-position: top left, top right, top left, bottom center;
+		background-repeat: no-repeat, no-repeat, repeat, no-repeat;
+        background-size: 25em, 25em, auto, cover; */
+
+        background-attachment: scroll, fixed;
+		background-color: #645862;
+		background-image: url("images/overlay.png"), url("../../images/ship.jpg");
+		background-position: top left, bottom center;
+		background-repeat: repeat, no-repeat;
+        background-size: auto, cover;
+
+		color: #fff;
+		padding: 5em;
+		text-align: center;
+	}
+
+
 
 /* Footer */
 
