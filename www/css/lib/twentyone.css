@@ -1072,55 +1072,15 @@ input, select, textarea {
         height: 100vh;
 	}
 
-    #banner-finance {
-		/* background-attachment: scroll, scroll, scroll, fixed;
-		background-color: #645862;
-		background-image: url("images/light-bl.svg"), url("images/light-br.svg"), url("images/overlay.png"), url("../../images/banner.jpg");
-		background-position: bottom left, bottom right, top left, top center;
-		background-repeat: no-repeat, no-repeat, repeat, no-repeat;
-        background-size: 25em, 25em, auto, cover; */
-
-        background-attachment: scroll, fixed;
-		background-color: #645862;
+    #banner.finance {
 		background-image: url("images/overlay-gradient.png"), url("../../images/light.jpg");
-		background-position: top left, top center;
-		background-repeat: no-repeat, no-repeat;
-		background-size: cover, cover;
-
-		color: #fff;
-		cursor: default;
-        padding: 150px;
-
-        text-align: left;
-        height: 100vh;
 	}
 
-    #banner-business {
-		/* background-attachment: scroll, scroll, scroll, fixed;
-		background-color: #645862;
-		background-image: url("images/light-bl.svg"), url("images/light-br.svg"), url("images/overlay.png"), url("../../images/banner.jpg");
-		background-position: bottom left, bottom right, top left, top center;
-		background-repeat: no-repeat, no-repeat, repeat, no-repeat;
-        background-size: 25em, 25em, auto, cover; */
-
-        background-attachment: scroll, fixed;
-		background-color: #645862;
-		background-image: url("images/overlay-gradient.png"), url("../../images/ship.jpg");
-		background-position: top left, top center;
-		background-repeat: no-repeat, no-repeat;
-		background-size: cover, cover;
-
-		color: #fff;
-		cursor: default;
-        padding: 150px;
-
-        text-align: left;
-        height: 100vh;
+    #banner.business {
+	    background-image: url("images/overlay-gradient.png"), url("../../images/ship.jpg");
 	}
 
-		#banner-finance .inner,
-        #banner-business .inner,
-        #banner .inner{
+	    #banner .inner{
 			-moz-animation: reveal-banner 1s 0.25s ease-in-out;
 			-webkit-animation: reveal-banner 1s 0.25s ease-in-out;
 			-ms-animation: reveal-banner 1s 0.25s ease-in-out;
