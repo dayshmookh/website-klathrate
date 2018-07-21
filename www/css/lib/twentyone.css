@@ -987,7 +987,7 @@ input, select, textarea {
         padding: 6em 0;
 
         text-align: left;
-        height: 100vh;
+        min-height: 100vh;
 	}
 
 		#aboutbanner .inner {
