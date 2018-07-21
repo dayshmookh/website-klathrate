@@ -2,6 +2,7 @@ extends layout.pug
 
 block styles
     //- Custom styles
+    link(rel="stylesheet", href="/css/about.css")
 
 block content
     //- Page content
@@ -33,20 +34,15 @@ block content
                                             li
                                                 input.special(type="submit", value="Send Message")
 
-                //-footer
-                    ul.buttons.stacked
-                        li
-                            a.button.primary.scrolly(href="#main", style="background: #ff8f00; border-color: #ff8f00") Tell Me More
-
-
     header.special.container
-        span.icon.fa-fire
+        span.icon.fa-fort-awesome
         
         h1(style="font-size: 3em;", data-aos="flip-up") What we do
 
+    section.wrapper.style4.special.container.medium
         .container
             .row.gtr-50
-                .col-6.col-12-narrower
+                .col-6.col-12-narrow
                     p(style="text-align: left") We are Klathrate - Trade Finance Simplified.
 
                     p(style="text-align: left") Klathrate offers a unique trade financing product targeted towards SMEs in developing markets. Our comprehensive and automated risk assessment model allows rapidly growing SMEs quick and easy access to finance.
@@ -55,7 +51,7 @@ block content
             
         
 
-                .col-6.col-12-narrower
+                .col-6.col-12-narrow
                     .row
                         .col-6
                             section(data-aos="zoom-in-down")
@@ -87,53 +83,83 @@ block content
                                 //-p
                                     | Sed tristique purus vitae volutpat ultrices. Aliquam eu elit eget arcu commodo suscipit dolor nec nibh. Proin a ullamcorper elit, et sagittis turpis. Integer ut fermentum.
                 
-    //-section.wrapper.style1.container.special
     
-        .row.gtr-50
-            .col-8.col-12-narrower
-                //- Slideshow container
-                .slideshow-container(data-tilt)
-                    //- Full-width images with number and caption text
-                    .mySlides.fade
-                        //-.numbertext 1 / 3
-                        //- img(src="/images/pic01.jpg", style="width:100%")
-                        
-                        .text We were able to double our sales with timely access to working capital from Klathrate 
-                        .author Some author name
-                    .mySlides.fade
-                        //-.numbertext 2 / 3
-                        //- img(src="/images/pic02.jpg", style="width:100%")
-                        
-                        .text Our company now sells to 6 more buyers in 4 different countries since we now offer credit terms with Klathrate's help
-                        .author Some author name
-                    .mySlides.fade
-                        //-.numbertext 3 / 3
-                        //- img(src="/images/pic03.jpg", style="width:100%")
-                        
-                        .text We were able to fulfill a sudden high demand of orders on receiving working capital from Klathrate in as little as a week
-                        .author Some author name
-                    //- Next and previous buttons
-                    //-a.prev(onclick="plusSlides(-1)") ❮
-                    //-a.next(onclick="plusSlides(1)") ❯
+    header.special.container
+        span.icon.fa-child
+        
+        h1(style="font-size: 3em;", data-aos="flip-up") Who we are
+
+    
+    section.wrapper.style1.container.special
+
+        .container.person-container
+            .row.gtr-50
+                .col-6.col-12-narrower(data-aos="zoom-in")
+                    img.zoomer.person(src="/images/pic03.jpg", alt="person")
+                    h3.name Prasen Lonikar
+                    p.description Some text telling us about him.
+                    ul.icons
+                        li
+                            a.icon.circle.fa-twitter(href="#")
+                        li
+                            a.icon.circle.fa-facebook(href="#")
+                        li
+                            a.icon.circle.fa-google-plus(href="#")
+                        li
+                            a.icon.circle.fa-github(href="#")
+                        li
+                            a.icon.circle.fa-dribbble(href="#")
+
+                .col-6.col-12-narrower(data-aos="zoom-in")
+                    img.zoomer.person(src="/images/pic03.jpg", alt="person")
+                    h3.name Prasen Lonikar
+                    p.description Some text telling us about him.
+                    ul.icons
+                        li
+                            a.icon.circle.fa-twitter(href="#")
+                        li
+                            a.icon.circle.fa-facebook(href="#")
+                        li
+                            a.icon.circle.fa-google-plus(href="#")
+                        li
+                            a.icon.circle.fa-github(href="#")
+                        li
+                            a.icon.circle.fa-dribbble(href="#")
+
+
+    
+    header.special.container
+        span.icon.fa-trophy
+        
+        h1(style="font-size: 3em;", data-aos="flip-up") Awards
+
+    
+    section.wrapper.style5.container.special
+
+        .container.award-container
+            .row.gtr-50
+                .col-4.col-12-narrower(data-aos="zoom-in-down")
+                    img.zoomer.award(src="/images/pic03.jpg", alt="award")
+                    //-h3.name Prasen Lonikar
+                    //-p.description Some text telling us about him.
+                    //-ul.icons
+                        li
+                            a.icon.circle.fa-twitter(href="#")
+                        li
+                            a.icon.circle.fa-facebook(href="#")
+                        li
+                            a.icon.circle.fa-google-plus(href="#")
+                        li
+                            a.icon.circle.fa-github(href="#")
+                        li
+                            a.icon.circle.fa-dribbble(href="#")
+                .col-4.col-12-narrower(data-aos="zoom-in-down")
+                    img.zoomer.award(src="/images/pic03.jpg", alt="award")
+
+                .col-4.col-12-narrower(data-aos="zoom-in-down")
+                    img.zoomer.award(src="/images/pic03.jpg", alt="award")
+
                 
-                //- The dots/circles
-                //-div(style="text-align:center")
-                    //span.dot(onclick="currentSlide(1)")
-                    //span.dot(onclick="currentSlide(2)")
-                    //span.dot(onclick="currentSlide(3)")
-                    span.dot
-                    span.dot
-                    span.dot
-
-                //-.image-container
-                    center
-                        img(src="/images/pic01.jpg", alt="how to pic", style="width: 80%;")
-            
-
-
-
-
-
 
 
 

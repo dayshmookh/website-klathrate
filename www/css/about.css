@@ -1,0 +1,24 @@
+img.person {
+    width: 200px;
+    height: 200px;
+    /* border-radius: 100px 50px 100px 50px; */    
+    border-radius: 100%;
+    transition: border-radius .25s ease;
+}
+
+img.person:hover {
+    border-radius: 8px;
+}
+
+.person-container .name {
+    margin-top: 0.75em;
+}
+
+.wrapper.style5 {
+    background: #83d3c9;
+}
+
+img.award {
+    width: 150px;
+    height: 150px;
+}
