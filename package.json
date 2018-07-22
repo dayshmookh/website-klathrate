@@ -1,10 +1,13 @@
 {
   "name": "website-klathrate",
   "version": "1.0.0",
+  "engines": {
+    "node": "10.7.0"
+  },
   "description": "Klathrate Trade finance website.",
   "main": "index.js",
   "scripts": {
-    "start": "NODE_ENV=production node index.js",
+    "start": "node index.js",
     "debug": "nodemon index.js",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
@@ -25,11 +28,12 @@
   },
   "homepage": "https://github.com/dayshmookh/website-klathrate#readme",
   "dependencies": {
+    "compression": "^1.7.3",
     "cors": "^2.8.4",
     "express": "^4.16.3",
+    "helmet": "^3.12.2",
     "pug": "^2.0.3",
-    "serve-favicon": "^2.5.0",
-    "typed.js": "^2.0.8"
+    "serve-favicon": "^2.5.0"
   },
   "devDependencies": {
     "eslint": "^5.1.0",
