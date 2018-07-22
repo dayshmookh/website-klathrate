@@ -1,7 +1,7 @@
 img.person {
     width: 200px;
     height: 200px;
-    /* border-radius: 100px 50px 100px 50px; */    
+    /* border-radius: 100px 50px 100px 50px; */
     border-radius: 100%;
     transition: border-radius .25s ease;
 }
