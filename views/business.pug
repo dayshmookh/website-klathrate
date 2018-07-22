@@ -7,7 +7,7 @@ block styles
 block content
     //- Page content
     //- Banner
-    section#banner-business
+    section#banner.business
         //-
             ".inner" is set up as an inline-block so it automatically expands
             in both directions to fit whatever's inside it. This means it won't
@@ -33,12 +33,11 @@ block content
 
                 h1(style="font-size: 2em;color:#83d3c9")  Klatharate's   Advantage
                 h1(style="font-size: 1em;") What Klatharate strives to offer
-                br
-                br
+
             .row
                 .col-4.col-12-narrower(data-aos="zoom-in-right")
                     section
-                        span.icon.featured.fa.fa-area-chart(style="color:black;")
+                        span.icon.featured.fa.fa-angle-double-right(style="color:black;")
                         header
                             h3(style="color:black;") Quick access to capital
                         p
@@ -67,66 +66,80 @@ block content
                             br
                             | experience
 
+        //two
+        section.wrapper.style1.special(style="background-image:url('/images/light.jpg')")
+            header.special.container(data-aos="zoom-in-right")
+                .row
+                    .col-12
+                        h1(style="font-size: 2em;color:#83d3c9")  The Klatharat's Platform
+                        h1(style="font-size: 1em;color:#83d3c9") How Klatharat's stands out
 
-        //section.wrapper.style2.container.special-alt
-
-            header
-                h3(style="font-size: 2em;") Create Investment
-            .row.gtr-50
-                .col-7.col-12-narrower
-
-
-                    // One
-                    section.wrapper.style4.special.container.medium#form
-                        // Content
-                        .content
-                        form#investform(style='color:black' action="#")
-                            .row.gtr-50
-                                .col-12#input
-                                    input(type="text" name="name" placeholder="Full Name")
-                                .col-12#input
-                                    input(type="text" name="email" placeholder="Email")
-                                .col-12#input
-                                    input(type="text" name="subject" placeholder="Organization")
-                                .col-12#input
-                                    input(type="text" placeholder="Phone" name="phone")
-                    footer
-                        ul.buttons
-                            li
-                                a.button(href="javascript:document.getElementById('investform').submit();") Submit
+            .row
+                .col-4.col-12-narrower
+                    span.icon.featured.fa.fas.fa-envelope-open(style="color:orange;")
+                    h1(style="font-size: 1em;color:#83d3c9") Zero reconciliation time
+                    p
+                        | Save time in operational hassles
+                        br
 
 
-                .col-5.col-12-narrower.imp-narrower
-                    ul.featured-icons
-                        li(data-aos="zoom-in")
-                            span.icon.fa-clock-o
-                                span.label Feature 1
-                        li(data-aos="zoom-in")
-                            span.icon.fa-volume-up
-                                span.label Feature 2
-                        li(data-aos="zoom-in")
-                            span.icon.fa-laptop
-                                span.label Feature 3
-                        li(data-aos="zoom-in")
-                            span.icon.fa-inbox
-                                span.label Feature 4
-                        li(data-aos="zoom-in")
-                            span.icon.fa-lock
-                                span.label Feature 5
-                        li(data-aos="zoom-in")
-                            span.icon.fa-cog
-                                span.label Feature 6
+                .col-4.col-12-narrower
+                    span.icon.featured.fa.fas.fa-wrench(style="color:orange;")
+                    h1(style="font-size: 1em;color:#83d3c9") Real time status updates
+                    p
+                        | Businesses upload invoices and can track their statuses
+                        br
+                        | in real-time
+                        br
+                .col-4.col-12-narrower
+                    span.icon.featured.fa.fa-clock-o(style="color:orange;")
+                    h1(style="font-size: 1em;color:#83d3c9") Instant listing & quick disbursal
+                    p
+                        | Upload invoices for instant listing & quick disbursal
+
+            .row
+                .col-4.col-12-narrower
+        //- three
+        section.wrapper.style1.container.special
+            header.special.container
+                span.icon.fa.fa-bullseye(style="color:black")
+
+                h1(style="font-size: 2em;color:#83d3c9")  How to get financed?
+                h1(style="font-size: 1em;") Get quick access to capital
+            .row
+                .col-4.col-12-narrower
+                    h1(style="font-size:1.5em;") Sign Up Online
+                    p
+                        | Sign up and become a verified
+                        br
+                        | KredX member.
+                .col-4.col-12-narrower
+                    h1(style="font-size:1.5em;") Upload Invoices
+                    p
+                        | Post verification, get your invoices
+                        br
+                        | listed.
+                .col-4.col-12-narrower
+                    h1(style="font-size:1.5em;") Get Funded
+                    p
+                        | Instant listing and quick disbursal
+                        br
+                        | of funds.
 
 
-        //- Two
+
+
+
+
+
+        //- four
         section.wrapper.style1.container.special
             header.special.container
                 span.icon.fa.fa-bullseye(style="color:black")
 
                 h1(style="font-size: 2em;color:#83d3c9")  Klatharate's   Uniqueness
                 h1(style="font-size: 1em;") Why Klatharate's at this position
-                br
-                br
+
             .row
                 .col-4.col-12-narrower(data-aos="zoom-in-right")
                     section
@@ -160,7 +173,6 @@ block content
                             br
                             | Invest in Verified
 
-    //- Three
 
     //- CTA
     section#cta-business

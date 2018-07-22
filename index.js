@@ -14,7 +14,9 @@ var port = process.env.PORT || 3000;
 
 //var dbport = 'mongodb://';
 
-var routes = require('./routes.js');
+var path = require('path');
+
+var routes = require(path.join(__dirname, 'routes.js'));
 
 
 
@@ -49,7 +51,7 @@ app.use(bodyParser.json());
 // -----
 
 app.set('view engine', 'pug');
-app.set('views', './views');
+app.set('views', path.join(__dirname, 'views'));
 
 // -----
 
@@ -59,11 +61,21 @@ app.use(cors());
 // -----
 
 var favicon = require('serve-favicon');
-app.use(favicon('./www/favicon.ico'));
+app.use(favicon(path.join(__dirname, 'www/favicon.ico')));
 
 // -----
 
-app.use(express.static('www'));
+var compression = require('compression');
+app.use(compression()); //Compress all routes
+
+// -----
+
+var helmet = require('helmet');
+app.use(helmet());
+
+// -----
+
+app.use(express.static(path.join(__dirname, 'www')));
 
 // -----
 
