@@ -427,7 +427,16 @@ input, select, textarea {
 
 				.icon.circle.fa-dribbble:hover {
 					background: #df93b8;
-				}
+                }
+                
+            .icon.circle.fa-linkedin {
+                background: #da83ae;
+                color: #fff;
+            }
+
+                .icon.circle.fa-linkedin:hover {
+                    background: #df93b8;
+                }
 
 		.icon.featured {
 			cursor: default;
