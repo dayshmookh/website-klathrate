@@ -498,7 +498,7 @@ input, select, textarea {
 	ul.featured-icons {
 		cursor: default;
 		margin: -0.75em 0 0 0;
-		opacity: 0.35;
+		opacity: 1;
 		overflow: hidden;
 		position: relative;
 		list-style: none;
@@ -670,7 +670,7 @@ input, select, textarea {
 		}
 
 		.wrapper.style2 {
-			background-color: #00acc1;
+			background-color: #f3f6fa;
 			/* background-image: url("images/light-bl.svg"), url("images/light-br.svg");
 			background-position: bottom left, bottom right;
 			background-repeat: no-repeat, no-repeat;
