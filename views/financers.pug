@@ -77,28 +77,36 @@ block content
                                 span.icon.featured.fa.fa-area-chart(style="color:black;")
 
                             .col-10
-                                h3(style="color:black;") Get Fast!
-                                p High Yield. Low Risk. Short Duration.
+                                h3(style="color:black;") Underwritten credit risk!
+                                p All the credit risk is underwritten by leading global insurers.
 
                         .row
                             .col-2
-                                span.icon.featured.fa.fa-ravelry(style="color:black;")
+                                span.icon.featured.fa.fa-line-chart(style="color:black;")
 
                             .col-10
-                                h3(style="color:black;") Get Big!
-                                p Diversification. Global Contacts. Corporate receivables.
+                                h3(style="color:black;") Attractive yield!
+                                p Low maturity and high yield in short term receivables.
                         
+                        .row
+                            .col-2
+                                span.icon.featured.fa.fa-globe(style="color:black;")
+
+                            .col-10
+                                h3(style="color:black;") Manage Exposure
+                                p Manage exposure by creating a portfolio of various companies.
                         .row
                             .col-2
                                 span.icon.featured.fa.fa-check(style="color:black;")
 
                             .col-10
-                                h3(style="color:black;") Get Verified!
-                                p Global Exposure. Invest in Verified
+                                h3(style="color:black;") Efficient organisation
+                                p Klathrate screens and checks all the compliance. Trusted and screened buyers only.
 
 
                 .col-6.col-12-narrower.padded-comfortable
-                    canvas#myChart(width="400px", height="250px")
+
+                    canvas#myChart(width="400px", height="250px",style="margin-top:100px;")
 
                     p TRADE FINANCE RECEIVABLES
 
@@ -108,12 +116,13 @@ block content
         section.wrapper.style2.container.special-alt
 
             header
-                h3(style="font-size: 2em;") Create Investment
+
             .row.gtr-50
                 .col-7.col-12-narrower
 
 
                     // One
+                    h3(style="font-size: 3.5em;color:black") Get in Touch
                     section.wrapper.style4.special.container.medium#form
 
                         form#investform(style='color:black' action="#")
@@ -129,27 +138,29 @@ block content
                     footer
                         ul.buttons
                             li
-                                a.button(href="javascript:document.getElementById('investform').submit();") Submit
+                                a.button(href="javascript:document.getElementById('investform').submit();",style="background-color:#ffc107") Submit
 
 
                 .col-5.col-12-narrower.imp-narrower
+                    h3(style="font-size: 2em;margin-left:8%;color:black") Our Partners in
+                    h3(style="font-size: 2em;margin-left:15%;color:black") Underwriting
+
+                    br
                     ul.featured-icons
                         li(data-aos="zoom-in")
-                            span.icon.fa-clock-o
-                                span.label Feature 1
+                            img(src="/images/tata.png")
                         li(data-aos="zoom-in")
-                            span.icon.fa-volume-up
-                                span.label Feature 2
+                            img(src="/images/sbi.png")
                         li(data-aos="zoom-in")
-                            span.icon.fa-laptop
-                                span.label Feature 3
+                            br
+                            img(src="/images/hdfc.png")
                         li(data-aos="zoom-in")
-                            span.icon.fa-inbox
-                                span.label Feature 4
+                            br
+                            img(src="/images/lamba.png")
                         li(data-aos="zoom-in")
-                            span.icon.fa-lock
-                                span.label Feature 5
-                        li(data-aos="zoom-in")
+                            br
+                            img(src="/images/bajaj.png",style="margin-left:30%;")
+                        //li(data-aos="zoom-in")
                             span.icon.fa-cog
                                 span.label Feature 6
 
@@ -169,7 +180,7 @@ block content
         footer
             ul.buttons
                 li
-                    a.button.primary(href="#") Let's Invest
+                    a.button.primary(href="#",style="background-color:#ffc107;border: 1px solid #ffc107") Let's Invest
                 li
                     a.button(href="#") Get More
 
