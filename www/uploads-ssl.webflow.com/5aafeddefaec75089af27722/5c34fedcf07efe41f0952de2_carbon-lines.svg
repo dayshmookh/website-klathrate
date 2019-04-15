@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="962px" height="301px" viewBox="0 0 962 301" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <!-- Generator: Sketch 52.5 (67469) - http://www.bohemiancoding.com/sketch -->
+    <title>Group 6</title>
+    <desc>Created with Sketch.</desc>
+    <defs>
+        <linearGradient x1="96.7761543%" y1="50%" x2="3.65712691%" y2="50%" id="linearGradient-1">
+            <stop stop-color="#FF0084" offset="0%"></stop>
+            <stop stop-color="#FF0000" offset="100%"></stop>
+        </linearGradient>
+        <linearGradient x1="99.7000558%" y1="49.7000558%" x2="0.299944196%" y2="49.7000558%" id="linearGradient-2">
+            <stop stop-color="#0000FF" offset="0%"></stop>
+            <stop stop-color="#5E5EFF" offset="100%"></stop>
+        </linearGradient>
+    </defs>
+    <g id="Page-1" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="Ethic-Impact-Growth" transform="translate(-282.000000, -6009.000000)" fill-rule="nonzero" stroke-width="2">
+            <g id="carbon-lines" transform="translate(282.000000, 6010.000000)">
+                <g id="Group-6">
+                    <path d="M961,0 C900.131157,71.7712143 844.321352,131.782937 735,189.612613 C625.678648,247.442288 490.144148,270.821634 395.248,280.586598 C300.351852,290.351562 52.0378534,299 0,299" id="Path" stroke="url(#linearGradient-1)"></path>
+                    <path d="M959,200 C893.384243,230.33138 819.306921,251.068067 736.768035,262.210061 C612.959705,278.923052 449.1181,299 0,299" id="Shape" stroke="url(#linearGradient-2)"></path>
+                </g>
+            </g>
+        </g>
+    </g>
+</svg>
