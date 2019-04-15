@@ -1,18 +1,7 @@
 # Klathrate
 
-Before running, install dependencies:
-```
-npm i
-```
+Website for Klathrate Trade Finance Platform.
 
-To start in development:
-```
-npm run debug
-```
+[Preview](https://root-kings.github.io/website-klathrate/)
 
-To start in production:
-```
-npm start
-```
-
-Created by Dayshmookh Apps.
+Created by [R00t Kings](https://root-kings.github.io).
