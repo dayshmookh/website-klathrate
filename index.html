@@ -55,7 +55,25 @@
 				background-position: top left, top center;
 				background-repeat: no-repeat, no-repeat;
 				background-size: cover, cover;
-				
+			}
+			@media (max-width: 479px) {
+				.press-hero-text {
+					min-height: 184px;
+				}
+			}
+
+			@media (max-width: 767px) {
+				.press-hero-text {
+					min-height: 444px;
+				}
+			}
+			@media (max-width: 991px) {
+				.press-hero-text {
+					min-height: 198px;
+				}
+			}
+			.press-hero-text {
+				min-height: 234px;
 			}
 		</style>
 	</head>
@@ -103,7 +121,7 @@
 		</div>
 		<div class="page-container-main herocontainer">
 			<div class="press-header centeraligned herocontainer">
-				<div class="press-hero-text">Turn receivables into cash-flow and fund your business growth.</div>
+				<div class="press-hero-text" id="banner-header">Turn receivables into cash-flow and fund your business growth.</div>
 				<div class="mini-arrow-down-container left">
 					<a href="#company" class="w-inline-block">
 						<img src="uploads-ssl.webflow.com/5aafeddefaec75089af27722/5b85a9940b8e7834fb204ad6_down.svg" alt="" class="image-279" />
@@ -305,5 +323,19 @@
 				display: none !important;
 			}
 		</style>
+
+		<script src="js/lib/typeit.min.js"></script>
+		<script>
+			$(document).ready(function() {
+				new TypeIt('#banner-header', {
+					strings: ['Turn receivables into cash-flow and fund your business growth.'],
+					speed: 50,
+					breakLines: false,
+					autoStart: false,
+					loop: true,
+					nextStringDelay: [10, 1500]
+				})
+			})
+		</script>
 	</body>
 </html>
