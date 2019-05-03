@@ -1,0 +1,163 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<meta http-equiv="X-UA-Compatible" content="ie=edge" />
+		<title>Klathrate | Invoice</title>
+
+		<!-- Compiled and minified CSS -->
+		<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css" />
+
+		<!--Import Google Icon Font-->
+		<link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet" />
+
+		<style>
+			body {
+				display: flex;
+				min-height: 100vh;
+				flex-direction: column;
+			}
+
+			.flexy {
+				flex: 1 0 auto;
+			}
+
+			h4.heading {
+				font-weight: 500;
+			}
+
+			table.no-bottom-border tr {
+				border-bottom: initial;
+			}
+
+			table.no-bottom-border thead tr {
+				border-bottom: 1px solid rgba(0, 0, 0, 0.25);
+				text-transform: uppercase;
+			}
+
+			th {
+				font-weight: normal;
+				font-size: 0.9rem;
+			}
+
+			table.no-bottom-border td {
+				font-weight: 500;
+			}
+
+			table.top-align td {
+				vertical-align: text-top;
+			}
+
+			.mini-text {
+				font-size: 0.85rem;
+			}
+		</style>
+	</head>
+	<body>
+		<section class="flexy">
+			<div class="container">
+				<div class="row">
+					<div class="col s12">
+						<h4 class="heading">Klathrate Invoice</h4>
+						<!-- <h4>klathrate</h4>
+						<h4 class="heading">INVOICE</h4> -->
+					</div>
+				</div>
+				<div class="row">
+					<div class="col s6">
+						<h5>Client Name</h5>
+						<p>Date issued: <strong>12/34/5678</strong></p>
+						<p>Invoice No.: <strong>123456</strong></p>
+					</div>
+					<div class="col s6 right-align">
+						<p>Your name</p>
+						<p>
+							Your address <br />
+							town <br />
+							city <br />
+							pincode
+						</p>
+					</div>
+				</div>
+				<div class="row">
+					<div class="col s12">
+						<table class="no-bottom-border">
+							<thead>
+								<tr class="grey-text text-darken-3">
+									<th>Description</th>
+									<th class="right-align">Rate</th>
+									<th class="right-align">Quantity</th>
+									<th class="right-align">Subtotal</th>
+								</tr>
+							</thead>
+
+							<tbody>
+								<tr>
+									<td>Alvin</td>
+									<td class="right-align">$0.87</td>
+									<td class="right-align">1</td>
+									<td class="right-align blue-text text-darken-3">$0.87</td>
+								</tr>
+								<tr>
+									<td>Alan</td>
+									<td class="right-align">$3.76</td>
+									<td class="right-align">1</td>
+									<td class="right-align blue-text text-darken-3">$3.76</td>
+								</tr>
+							</tbody>
+						</table>
+					</div>
+				</div>
+			</div>
+		</section>
+		<section class="grey lighten-2">
+			<div class="container">
+				<div class="row">
+					<div class="col s12">
+						<table class="top-align">
+							<thead>
+								<tr class="grey-text text-darken-3">
+									<th>Bank Info</th>
+									<th>Due by</th>
+									<th class="right-align">Total Due</th>
+								</tr>
+							</thead>
+
+							<tbody>
+								<tr>
+									<td>
+										<p>
+											Account No.: <strong>123 456 789</strong> <br />
+											Sort Code: <strong>123456</strong>
+										</p>
+									</td>
+									<td>
+										<h5>18 may '19</h5>
+									</td>
+
+									<td class="right-align blue-text text-darken-3"><h5>$0.87</h5></td>
+								</tr>
+							</tbody>
+						</table>
+					</div>
+				</div>
+				<div class="row">
+					<div class="col s12">
+						<p>
+							<i class="material-icons red-text left">favorite</i> Thank you!
+							<span class="mini-text right">contact@klathrate.com | +91 1234 5678 90 | klathrate.com</span>
+						</p>
+					</div>
+				</div>
+			</div>
+		</section>
+
+		<!-- Compiled and minified JavaScript -->
+		<script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js"></script>
+
+		<script>
+			M.AutoInit()
+		</script>
+	</body>
+</html>
