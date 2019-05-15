@@ -50,6 +50,14 @@
 			ga('create', 'UA-68890815-7', 'auto')
 			ga('send', 'pageview')
 		</script>
+		<style>
+			#particles canvas {
+				position: absolute;
+				width: 100%;
+				height: 100%;
+				z-index: -1;
+			}
+		</style>
 	</head>
 
 	<body class="body">
@@ -75,8 +83,8 @@
 								<div class="burger-text">Financial Institutions</div>
 							</a>
 							<!-- <a href="about-us.html" class="burger-link w-inline-block"> 
-								<div class="burger-text">About us</div> -->
-							</a>
+								<div class="burger-text">About us</div> 
+							</a>-->
 							<a href="press.html" class="burger-link w-inline-block">
 								<div class="burger-text">Press</div>
 							</a>
@@ -94,7 +102,7 @@
 				</div>
 			</div>
 		</div>
-		<div class="page-container">
+		<div class="page-container" id="particles">
 			<div data-w-id="9b6209a3-44a9-4090-76d4-5ab1adb42b3a" style="opacity:0" class="centre-container center-left-hero">
 				<div class="typeicon">
 					<img src="uploads-ssl.webflow.com/5aafeddefaec75089af27722/5aafeddefaec750e0df27770_investor-ico-blue.svg" alt="" class="image-6" />
@@ -142,6 +150,127 @@
 				</div>
 			</div>
 		</div>
+
+		<script src="js/lib/particles.min.js"></script>
+
+		<script>
+			document.addEventListener('DOMContentLoaded', function() {
+				let particleConfig = {
+					particles: {
+						number: {
+							value: 50,
+							density: {
+								enable: true,
+								value_area: 800
+							}
+						},
+						color: {
+							value: '#0000ff'
+						},
+						shape: {
+							type: 'circle',
+							stroke: {
+								width: 0,
+								color: '#000000'
+							},
+							polygon: {
+								nb_sides: 5
+							},
+							image: {
+								src: 'img/github.svg',
+								width: 100,
+								height: 100
+							}
+						},
+						opacity: {
+							value: 0.5,
+							random: false,
+							anim: {
+								enable: false,
+								speed: 1,
+								opacity_min: 0.1,
+								sync: false
+							}
+						},
+						size: {
+							value: 3,
+							random: true,
+							anim: {
+								enable: false,
+								speed: 40,
+								size_min: 0.1,
+								sync: false
+							}
+						},
+						line_linked: {
+							enable: false,
+							distance: 150,
+							color: '#0000ff',
+							opacity: 0.4,
+							width: 1
+						},
+						move: {
+							enable: true,
+							speed: 6,
+							direction: 'none',
+							random: false,
+							straight: false,
+							out_mode: 'out',
+							bounce: false,
+							attract: {
+								enable: false,
+								rotateX: 600,
+								rotateY: 1200
+							}
+						}
+					},
+					interactivity: {
+						detect_on: 'canvas',
+						events: {
+							onhover: {
+								enable: true,
+								mode: 'grab'
+							},
+							onclick: {
+								enable: true,
+								mode: 'push'
+							},
+							resize: true
+						},
+						modes: {
+							grab: {
+								distance: 400,
+								line_linked: {
+									opacity: 0.75
+								}
+							},
+							bubble: {
+								distance: 400,
+								size: 40,
+								duration: 2,
+								opacity: 8,
+								speed: 3
+							},
+							repulse: {
+								distance: 200,
+								duration: 0.4
+							},
+							push: {
+								particles_nb: 4
+							},
+							remove: {
+								particles_nb: 2
+							}
+						}
+					},
+					retina_detect: true
+				}
+
+				// particlesJS.load('particles', 'js/particlesjs-config.json');
+				particlesJS('particles', particleConfig)
+			})
+		</script>
+
 		<div class="tilt-section-wrapper">
 			<div class="grey-diagonal-divider-right"></div>
 		</div>
@@ -176,11 +305,7 @@
 				<div class="ethic-header solutions institution">Custom solutions</div>
 				<div class="ethic-sub-text">Create an diversified portfolio with short tenure, high return which is customized to your organization risk principles.</div>
 				<div class="div-block-13">
-					<img
-						src="uploads-ssl.webflow.com/5aafeddefaec75089af27722/5ab52e0ee05e2f913c98337a_insto-product-skinny.png"
-						alt=""
-						class="image-252"
-					/>
+					<img src="uploads-ssl.webflow.com/5aafeddefaec75089af27722/5ab52e0ee05e2f913c98337a_insto-product-skinny.png" alt="" class="image-252" />
 				</div>
 			</div>
 		</div>
@@ -199,13 +324,13 @@
 				<div class="capabilities">
 					<div class="div-block-12">
 						<img src="uploads-ssl.webflow.com/5aafeddefaec75089af27722/5aafeddefaec755342f277b5_ico-sustainability.svg" alt="" class="logocap" />
-						<div class="cap-text">Invoice  <br />authentication</div>
+						<div class="cap-text">Invoice <br />authentication</div>
 						<div class="sub-cap">Invoice on Klathrate platform is authenticated and backed with Bill of exchange.</div>
 					</div>
 					<div class="div-block-12">
 						<img src="uploads-ssl.webflow.com/5aafeddefaec75089af27722/5aafeddefaec752941f27781_ico-optimization.svg" alt="" class="logocap" />
 						<div class="cap-text">Returns without <br />compromise</div>
-						<div class="sub-cap">Invoice on our Trade platform is completely secured with trade credit insurance, this means reduced risk </div>
+						<div class="sub-cap">Invoice on our Trade platform is completely secured with trade credit insurance, this means reduced risk</div>
 					</div>
 					<div class="div-block-12">
 						<img src="uploads-ssl.webflow.com/5aafeddefaec75089af27722/5aafeddefaec752b21f2777c_ico-metrics.svg" alt="" class="logocap" />
@@ -220,38 +345,26 @@
 		</div>
 		<div class="page-container">
 			<div class="centre-container centeraligned">
-				<div class="mainadvisorstext">Klathrate Advantage </div>
+				<div class="mainadvisorstext">Klathrate Advantage</div>
 				<div class="sub-partnerships">We Ensure the risk management of all credit risk in the trade transaction.</div>
 				<div class="tiles-partnerships">
 					<div data-w-id="6cc468a1-bb1e-fdae-3f56-57412ebf67cc" style="opacity:0" class="investors instotile">
 						<div class="investor-image">
-							<img
-								src="uploads-ssl.webflow.com/5aafeddefaec75089af27722/5aafeddefaec75a233f277ae_insto-advisor-thirdstream.png"
-								alt=""
-								class="investors-image"
-							/>
+							<img src="uploads-ssl.webflow.com/5aafeddefaec75089af27722/5aafeddefaec75a233f277ae_insto-advisor-thirdstream.png" alt="" class="investors-image" />
 						</div>
 						<div>
 							<div class="investor-text">
-								<div class="investor-small instosmall">
-									<strong>Strong legal framework </strong> All SME on Klathrate are required to sign legal documents to ensure than Financiers are well protected.
-								</div>
+								<div class="investor-small instosmall"><strong>Strong legal framework </strong> All SME on Klathrate are required to sign legal documents to ensure than Financiers are well protected.</div>
 							</div>
 						</div>
 					</div>
 					<div data-w-id="6cc468a1-bb1e-fdae-3f56-57412ebf67de" style="opacity:0" class="investors instotile">
 						<div class="investor-image">
-							<img
-								src="uploads-ssl.webflow.com/5aafeddefaec75089af27722/5aafeddefaec75b177f277af_insto-advisor-progress.png"
-								alt=""
-								class="investors-image"
-							/>
+							<img src="uploads-ssl.webflow.com/5aafeddefaec75089af27722/5aafeddefaec75b177f277af_insto-advisor-progress.png" alt="" class="investors-image" />
 						</div>
 						<div>
 							<div class="investor-text">
-								<div class="investor-small instosmall">
-									<strong>Comprehensive Risk Management </strong> Detailed Credit Risk analysis of SME & their Buyer’s Financials before onboarding them. 
-								</div>
+								<div class="investor-small instosmall"><strong>Comprehensive Risk Management </strong> Detailed Credit Risk analysis of SME & their Buyer’s Financials before onboarding them.</div>
 							</div>
 						</div>
 					</div>
@@ -412,9 +525,7 @@
 				</div>
 			</div>
 		</div>
-		<script src="https://code.jquery.com/jquery-3.4.0.min.js"
-  integrity="sha256-BJeo0qm959uMBGb65z40ejJYGSgR7REI4+CW1fNKwOg="
-  crossorigin="anonymous" ></script>
+		<script src="https://code.jquery.com/jquery-3.4.0.min.js" integrity="sha256-BJeo0qm959uMBGb65z40ejJYGSgR7REI4+CW1fNKwOg=" crossorigin="anonymous"></script>
 		<script src="uploads-ssl.webflow.com/5aafeddefaec75089af27722/js/webflow.2e909562c.js" type="text/javascript"></script>
 		<!--[if lte IE 9]>
 			<script src="cdnjs.cloudflare.com/ajax/libs/placeholders/3.0.2/placeholders.min.js"></script>
